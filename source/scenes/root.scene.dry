@@ -103,7 +103,7 @@ Q.moderate_plan_adopted = 0;
 // inter-party relations
 Q.z_relation = 50;
 Q.pcc_relation = 25;
-Q.ddp_relation = 60;
+Q.lpc_relation = 60;
 Q.dvp_relation = 35;
 // DNVP and NSDAP are invariably hostile
 Q.DNVP_relation = 10;
@@ -228,7 +228,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['ccf', 'pcc', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['ccf', 'pcc', 'z', 'lpc', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -238,7 +238,7 @@ Q.sapd_formed = 0;
 Q.workers_ccf = 60;
 Q.workers_pcc = 20;
 Q.workers_z = 5;
-Q.workers_ddp = 0;
+Q.workers_lpc = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
@@ -247,7 +247,7 @@ Q.workers_other = 10;
 Q.old_middle_ccf = 5;
 Q.old_middle_pcc = 0;
 Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
+Q.old_middle_lpc= 10;
 Q.old_middle_dvp = 25;
 Q.old_middle_dnvp = 25;
 Q.old_middle_nsdap = 10;
@@ -256,7 +256,7 @@ Q.old_middle_other = 10;
 Q.new_middle_ccf = 5;
 Q.new_middle_pcc = 1;
 Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
+Q.new_middle_lpc= 25;
 Q.new_middle_dvp = 25;
 Q.new_middle_dnvp = 10;
 Q.new_middle_nsdap = 5;
@@ -265,7 +265,7 @@ Q.new_middle_other = 15;
 Q.rural_ccf = 10;
 Q.rural_pcc = 0;
 Q.rural_z = 5;
-Q.rural_ddp= 5;
+Q.rural_lpc= 5;
 Q.rural_dvp = 15;
 Q.rural_dnvp = 45;
 Q.rural_nsdap = 5;
@@ -274,7 +274,7 @@ Q.rural_other = 10;
 Q.unemployed_ccf = 25;
 Q.unemployed_pcc = 55;
 Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
+Q.unemployed_lpc = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
@@ -283,7 +283,7 @@ Q.unemployed_other = 9;
 Q.catholics_ccf = 15;
 Q.catholics_pcc = 2;
 Q.catholics_z = 50;
-Q.catholics_ddp = 0;
+Q.catholics_lpc = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 0;
@@ -299,7 +299,7 @@ Q.catholics_other = 12;
 Q.ccf_r = 26;
 Q.pcc_r = 9;
 Q.z_r = 17;
-Q.ddp_r = 6;
+Q.lpc_r = 6;
 Q.dvp_r = 10;
 Q.dnvp_r = 20;
 Q.nsdap_r = 3;
@@ -309,7 +309,7 @@ Q.other_r = 9;
 Q.old_ccf_r = 26;
 Q.old_pcc_r = 9;
 Q.old_z_r = 17;
-Q.old_ddp_r = 6;
+Q.old_lpc_r = 6;
 Q.old_dvp_r = 10;
 Q.old_dnvp_r = 20;
 Q.old_nsdap_r = 3;
@@ -319,8 +319,8 @@ Q.old_other_r = 9;
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
-// for changing the DDP's name to the DStP
-Q.ddp_name = "DDP";
+// for changing the LPC's name to the DStP
+Q.lpc_name = "LPC";
 
 // array of objects of the form {date: Date(), ccf: 10, pcc: 12, ...} for each election
 Q.election_records = [];
@@ -337,19 +337,19 @@ Q.chancellor = "Marx";
 Q.chancellor_party = 'Z';
 Q.ccf_in_government = 0;
 Q.z_in_government = 1;
-Q.ddp_in_government = 0;
+Q.lpc_in_government = 0;
 Q.dvp_in_government = 1;
 Q.dnvp_in_government = 1;
 Q.pcc_in_government = 0;
 Q.nsdap_in_government = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = CCF + Z + DDP
+// Weimar coalition = CCF + Z + LPC
 Q.in_weimar_coalition = 0;
-// Grand coalition = CCF + Z + BVP + DDP + DVP
-// also includes the "new grand coalition" of CCF + Z + BVP + DDP + DVP + Others
+// Grand coalition = CCF + Z + BVP + LPC + DVP
+// also includes the "new grand coalition" of CCF + Z + BVP + LPC + DVP + Others
 Q.in_grand_coalition = 0;
-// Popular front = CCF + PCC + Z + DDP
+// Popular front = CCF + PCC + Z + LPC
 Q.in_popular_front = 0;
 // left coalition = CCF + PCC + left-splinters
 Q.in_left_front = 0;
