@@ -42,13 +42,13 @@ go-to: menu
 
 **1917**: The UCCF, a left-wing anti-war split from the CCF, is formed.
 
-**1918**: Following defeats in the war and uprisings by soldiers, sailors, and workers, CCF leader Philip Scheidemann proclaims the German Republic, and Kaiser Wilhelm II abdicates from his throne. An armistice is declared, ending the Great War. Conflict between center-left social democrats and far-left radicals erupts in the streets of Berlin and elsewhere.
+**1918**: Following defeats in the war and uprisings by soldiers, sailors, and workers, CCF leader Philip Scheidemann proclaims the German Republic, and Kaiser Wilhelm II abdicates from his throne. An armistice is declared, ending the Great War. Conflict between rpc-left social democrats and far-left radicals erupts in the streets of Berlin and elsewhere.
 
-**1919**: The Spartacist Uprising, in which communist workers attempt to seize control of government, is launched. The uprising is defeated by the Social Democratic government, now led by President Friedrich Ebert and Chancellor Philipp Scheidemann, with the support of the far-right Freikorps militias. The two key leaders of the uprising, Rosa Luxemburg and Karl Liebknecht, are murdered by the Freikorps. The Treaty of Versailles is signed under great protest from all political factions in Germany, officially ending the Great War. The Weimar Constitution is signed. The first "Weimar Coalition" government is formed, led by the CCF, LPC, and Center (Z) parties.
+**1919**: The Spartacist Uprising, in which communist workers attempt to seize control of government, is launched. The uprising is defeated by the Social Democratic government, now led by President Friedrich Ebert and Chancellor Philipp Scheidemann, with the support of the far-right Freikorps militias. The two key leaders of the uprising, Rosa Luxemburg and Karl Liebknecht, are murdered by the Freikorps. The Treaty of Versailles is signed under great protest from all political factions in Germany, officially ending the Great War. The Weimar Constitution is signed. The first "Weimar Coalition" government is formed, led by the CCF, LPC, and RPC parties.
 
 **1920**: The Kapp Putsch, an attempt by reactionary actors within the military to take power, is launched, and is defeated by the workers with a general strike. This is followed by left-wing uprisings in the Ruhr, which are defeated by the Reichswehr and Freikorps. The Weimar Coalition is defeated in the elections, with the right and far left increasing in vote share. Elected governments in this period are very unstable, often only lasting a matter of months. There is a split in the UCCF, with the majority faction joining with the PCC and the Soviet Union's Communist International (Comintern) alliance.
 
-**1921**: Communist uprisings in Saxony and Hamburg are defeated. Matthias Erzberger, the Center Party leader who signed the Versailles Treaty, is assassinated.
+**1921**: Communist uprisings in Saxony and Hamburg are defeated. Matthias Erzberger, the RPC Party leader who signed the Versailles Treaty, is assassinated.
 
 **1922**: The Treaty of Rapallo is signed, which normalized relations with the Soviet Union. Walther Rathenau, the LPC Foreign Minister, is assassinated. The CCF reunites with most of the remaining UCCF.
 
@@ -75,7 +75,7 @@ Reichstag composition:
 CCF: [+ ccf_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]%
+RPC + BVP: [+ rpc_r +]%
 # 1928: 10, 1930: 13
 PCC: [+ pcc_r +]%
 # 1928: 5, 1930: 4 (as DstP)
@@ -131,7 +131,7 @@ go-to: menu
 
 **Rural**: Small and large farmers and independent rural workers. Protestant farmers often support the SCP. 20-30% of the population.
 
-**Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the Center Party (or the Bavarian People's Party in Bavaria).
+**Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the RPC Party (or the Bavarian People's Party in Bavaria).
 
 **Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the LPC, although substantial numbers support the CCF or PCC.
 
@@ -167,7 +167,7 @@ CCF: [+ ccf_votes +]%
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_votes +]%
+RPC + BVP: [+ rpc_votes +]%
 
 # 1928: 10, 1930: 13
 PCC: [+ pcc_votes +]%
@@ -189,29 +189,29 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: CCF: [+ workers_ccf_display +]%, Z: [+ workers_z_display +]%, PCC: [+ workers_pcc_display +]%, [+ lpc_name +]: [+ workers_lpc_display +]%, CPC: [+ workers_cpc_display +]%; SCP: [+ workers_scp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: CCF: [+ workers_ccf_display +]%, RPC: [+ workers_rpc_display +]%, PCC: [+ workers_pcc_display +]%, [+ lpc_name +]: [+ workers_lpc_display +]%, CPC: [+ workers_cpc_display +]%; SCP: [+ workers_scp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: CCF: [+ new_middle_ccf_display +]%, Z: [+ new_middle_z_display +]%, PCC: [+ new_middle_pcc_display +]%, [+ lpc_name +]: [+ new_middle_lpc_display +]%, CPC: [+ new_middle_cpc_display +]%; SCP: [+ new_middle_scp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: CCF: [+ new_middle_ccf_display +]%, RPC: [+ new_middle_rpc_display +]%, PCC: [+ new_middle_pcc_display +]%, [+ lpc_name +]: [+ new_middle_lpc_display +]%, CPC: [+ new_middle_cpc_display +]%; SCP: [+ new_middle_scp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: CCF: [+ old_middle_ccf_display +]%, Z: [+ old_middle_z_display +]%, PCC: [+ old_middle_pcc_display +]%, [+ lpc_name +]: [+ old_middle_lpc_display +]%, CPC: [+ old_middle_cpc_display +]%; SCP: [+ old_middle_scp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class: CCF: [+ old_middle_ccf_display +]%, RPC: [+ old_middle_rpc_display +]%, PCC: [+ old_middle_pcc_display +]%, [+ lpc_name +]: [+ old_middle_lpc_display +]%, CPC: [+ old_middle_cpc_display +]%; SCP: [+ old_middle_scp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Rural: CCF: [+ rural_ccf_display +]%, Z: [+ rural_z_display +]%, PCC: [+ rural_pcc_display +]%, [+ lpc_name +]: [+ rural_lpc_display +]%, CPC: [+ rural_cpc_display +]%; SCP: [+ rural_scp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural: CCF: [+ rural_ccf_display +]%, RPC: [+ rural_rpc_display +]%, PCC: [+ rural_pcc_display +]%, [+ lpc_name +]: [+ rural_lpc_display +]%, CPC: [+ rural_cpc_display +]%; SCP: [+ rural_scp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
-Unemployed: CCF: [+ unemployed_ccf_display +]%, Z: [+ unemployed_z_display +]%, PCC: [+ unemployed_pcc_display +]%, [+ lpc_name +]: [+ unemployed_lpc_display +]%, CPC: [+ unemployed_cpc_display +]%; SCP: [+ unemployed_scp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: CCF: [+ unemployed_ccf_display +]%, RPC: [+ unemployed_rpc_display +]%, PCC: [+ unemployed_pcc_display +]%, [+ lpc_name +]: [+ unemployed_lpc_display +]%, CPC: [+ unemployed_cpc_display +]%; SCP: [+ unemployed_scp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Catholics: CCF: [+ catholics_ccf_display +]%, Z: [+ catholics_z_display +]%, PCC: [+ catholics_pcc_display +]%, [+ lpc_name +]: [+ catholics_lpc_display +]%, CPC: [+ catholics_cpc_display +]%; SCP: [+ catholics_scp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics: CCF: [+ catholics_ccf_display +]%, RPC: [+ catholics_rpc_display +]%, PCC: [+ catholics_pcc_display +]%, [+ lpc_name +]: [+ catholics_lpc_display +]%, CPC: [+ catholics_cpc_display +]%; SCP: [+ catholics_scp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 @parties
 go-to: menu
 
 **CCF** - *Co-operative Commonwealth Federation* - this is us. We are a socialist and democratic party of the working class. As a union of the Ginger Group, Independent Labour Party, and various provincial United Farmers movements, we are the foremost representative of the farmer and working class. 
 
-**Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
+**RPC** - *Reconstruction Party of Canada* - An offshoot party of the Conservatives. It is isolationist and an advocate for strong economic reform and government intervention in the face of the Great Depression. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
 
-Current relations: [+ z_relation : relationships +]
+Current relations: [+ rpc_relation : relationships +]
 
 # TODO: replace this with the german state party after 1930
-**LPC** - *Liberal Party of Canada* - a center-left liberal party, popular among the intelligensia and educated middle class. They are pro free trade and have seen decline for supposed mismanagement during the Great Depression. They are one of the "Big 2" parties of the Canadian political system. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
+**LPC** - *Liberal Party of Canada* - a rpc-left liberal party, popular among the intelligensia and educated middle class. They are pro free trade and have seen decline for supposed mismanagement during the Great Depression. They are one of the "Big 2" parties of the Canadian political system. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
 
 Current relations: [+ lpc_relation : relationships +]
 
@@ -245,7 +245,7 @@ go-to: menu
 
 **Paramilitary groups:**
 
-**Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the CCF, Z, and LPC, but primarily with the CCF. Historically, this has been an unarmed organization.
+**Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the CCF, RPC, and LPC, but primarily with the CCF. Historically, this has been an unarmed organization.
 
 Strength: [+ rb_strength +] thousand
 
@@ -300,9 +300,9 @@ Dissent: [+ left_dissent : dissent +]
 
 Centrists in the CCF are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
 
-Strength: [+ center_strength : strength +]
+Strength: [+ rpc_strength : strength +]
 
-Dissent: [+ center_dissent : dissent +]
+Dissent: [+ rpc_dissent : dissent +]
 
 **Labor**
 
@@ -335,7 +335,7 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: z_minus_bvp_r = z_r - 3;
+on-arrival: rpc_minus_bvp_r = rpc_r - 3;
 on-display: {!
 data = [
     {
@@ -366,10 +366,10 @@ data = data.concat([
         "seats": Q.lpc_r*5,
     },
     {
-        "id": "z",
-        "legend": "Center",
-        "name": "Center",
-        "seats": (Q.z_r - 3)*5,
+        "id": "rpc",
+        "legend": "RPC",
+        "name": "RPC",
+        "seats": (Q.rpc_r - 3)*5,
     },
     {
         "id": "bvp",
@@ -414,14 +414,14 @@ if (d3 && window) {
     }
     var parliament = d3.parliament();
     parliament.width(width).height(height).innerRadiusCoef(0.4);
-    parliament.enter.fromCenter(true).smallToBig(true);
-    parliament.exit.toCenter(false).bigToSmall(true);
+    parliament.enter.fromRPC(true).smallToBig(true);
+    parliament.exit.toRPC(false).bigToSmall(true);
     d3.select("#reichstag").datum(data).call(parliament);
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'ccf': '#E3000F', 'pcc': '#8B0000', 'lpc': '#DCCA4A', 'z': '#000', 'cpc': '#D5AC27', 'scp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'ccf': 'CCF', 'pcc': 'PCC', 'lpc': Q.lpc_name, 'z': 'Z + BVP', 'cpc': 'CPC', 'scp': 'SCP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ccf': '#E3000F', 'pcc': '#8B0000', 'lpc': '#DCCA4A', 'rpc': '#000', 'cpc': '#D5AC27', 'scp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'ccf': 'CCF', 'pcc': 'PCC', 'lpc': Q.lpc_name, 'rpc': 'RPC + BVP', 'cpc': 'CPC', 'scp': 'SCP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -433,8 +433,8 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'ccf': '#E3000F', 'pcc': '#8B0000', 'lpc': '#DCCA4A', 'z': '#000', 'cpc': '#D5AC27', 'scp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'ccf': 'CCF', 'pcc': 'PCC', 'lpc': Q.lpc_name, 'z': 'Z + BVP', 'cpc': 'CPC', 'scp': 'SCP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ccf': '#E3000F', 'pcc': '#8B0000', 'lpc': '#DCCA4A', 'rpc': '#000', 'cpc': '#D5AC27', 'scp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'ccf': 'CCF', 'pcc': 'PCC', 'lpc': Q.lpc_name, 'rpc': 'RPC + BVP', 'cpc': 'CPC', 'scp': 'SCP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -464,7 +464,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#DCCA4A'> </div></td><td>!} [+ lpc_name +]: {!</td><td>!} [+ lpc_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} Z: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} RPC: {!</td><td>!} [+ rpc_minus_bvp_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#69A2BE'> </div></td><td>!} BVP: {!</td><td>!} 3% {!</td></tr>!}
 

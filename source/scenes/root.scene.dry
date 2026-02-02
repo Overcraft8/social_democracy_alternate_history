@@ -101,7 +101,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
+Q.rpc_relation = 50;
 Q.pcc_relation = 25;
 Q.lpc_relation = 60;
 Q.cpc_relation = 35;
@@ -112,9 +112,9 @@ Q.NSDAP_relation = 0;
 Q.pcc_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.pcc_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.rpc_leader = "Brüning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the CCF.
-Q.z_party_leader = "Marx";
+Q.rpc_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -125,7 +125,7 @@ Q.hindenburg_enabled = 0;
 
 // Does the CCF lead in Prussia?
 Q.ccf_prussia = 1;
-// Options: ccf, z, dnvp, papen, nsdap
+// Options: ccf, rpc, dnvp, papen, nsdap
 Q.prussian_government = "CCF";
 
 // The array of forces - paramilitary groups
@@ -228,7 +228,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['ccf', 'pcc', 'z', 'lpc', 'cpc', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['ccf', 'pcc', 'rpc', 'lpc', 'cpc', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -237,7 +237,7 @@ Q.sapd_formed = 0;
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_ccf = 60;
 Q.workers_pcc = 20;
-Q.workers_z = 5;
+Q.workers_rpc = 5;
 Q.workers_lpc = 0;
 Q.workers_cpc = 0;
 Q.workers_dnvp = 5;
@@ -246,7 +246,7 @@ Q.workers_other = 10;
 
 Q.old_middle_ccf = 5;
 Q.old_middle_pcc = 0;
-Q.old_middle_z = 5;
+Q.old_middle_rpc = 5;
 Q.old_middle_lpc= 10;
 Q.old_middle_cpc = 25;
 Q.old_middle_dnvp = 25;
@@ -255,7 +255,7 @@ Q.old_middle_other = 10;
 
 Q.new_middle_ccf = 5;
 Q.new_middle_pcc = 1;
-Q.new_middle_z = 10;
+Q.new_middle_rpc = 10;
 Q.new_middle_lpc= 25;
 Q.new_middle_cpc = 25;
 Q.new_middle_dnvp = 10;
@@ -264,7 +264,7 @@ Q.new_middle_other = 15;
 
 Q.rural_ccf = 10;
 Q.rural_pcc = 0;
-Q.rural_z = 5;
+Q.rural_rpc = 5;
 Q.rural_lpc= 5;
 Q.rural_cpc = 15;
 Q.rural_dnvp = 45;
@@ -273,7 +273,7 @@ Q.rural_other = 10;
 
 Q.unemployed_ccf = 25;
 Q.unemployed_pcc = 55;
-Q.unemployed_z = 1;
+Q.unemployed_rpc = 1;
 Q.unemployed_lpc = 0;
 Q.unemployed_cpc = 0;
 Q.unemployed_dnvp = 5;
@@ -282,7 +282,7 @@ Q.unemployed_other = 9;
 
 Q.catholics_ccf = 15;
 Q.catholics_pcc = 2;
-Q.catholics_z = 50;
+Q.catholics_rpc = 50;
 Q.catholics_lpc = 0;
 Q.catholics_cpc = 5;
 Q.catholics_dnvp = 5;
@@ -293,12 +293,12 @@ Q.catholics_other = 12;
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
 // source: wikipedia
-// note: the Z figures also include the BVP (Bavarian people's party)
+// note: the RPC figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.ccf_r = 26;
 Q.pcc_r = 9;
-Q.z_r = 17;
+Q.rpc_r = 17;
 Q.lpc_r = 6;
 Q.cpc_r = 10;
 Q.dnvp_r = 20;
@@ -308,7 +308,7 @@ Q.other_r = 9;
 // diff from prev
 Q.old_ccf_r = 26;
 Q.old_pcc_r = 9;
-Q.old_z_r = 17;
+Q.old_rpc_r = 17;
 Q.old_lpc_r = 6;
 Q.old_cpc_r = 10;
 Q.old_dnvp_r = 20;
@@ -334,9 +334,9 @@ Q.economic_records = [];
 Q.president = "Hindenburg";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+Q.chancellor_party = 'RPC';
 Q.ccf_in_government = 0;
-Q.z_in_government = 1;
+Q.rpc_in_government = 1;
 Q.lpc_in_government = 0;
 Q.cpc_in_government = 1;
 Q.dnvp_in_government = 1;
@@ -344,12 +344,12 @@ Q.pcc_in_government = 0;
 Q.nsdap_in_government = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = CCF + Z + LPC
+// Weimar coalition = CCF + RPC + LPC
 Q.in_weimar_coalition = 0;
-// Grand coalition = CCF + Z + BVP + LPC + CPC
-// also includes the "new grand coalition" of CCF + Z + BVP + LPC + CPC + Others
+// Grand coalition = CCF + RPC + BVP + LPC + CPC
+// also includes the "new grand coalition" of CCF + RPC + BVP + LPC + CPC + Others
 Q.in_grand_coalition = 0;
-// Popular front = CCF + PCC + Z + LPC
+// Popular front = CCF + PCC + RPC + LPC
 Q.in_popular_front = 0;
 // left coalition = CCF + PCC + left-splinters
 Q.in_left_front = 0;
@@ -382,13 +382,13 @@ Q.interior_minister_party = 'DNVP';
 Q.justice_minister = 'Hergt';
 Q.justice_minister_party = 'DNVP';
 Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
+Q.labor_minister_party = 'RPC';
 Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
 Q.economic_minister_party = 'CPC';
 Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
+Q.finance_minister_party = 'RPC';
 Q.agriculture_minister = 'Schiele';
 Q.agriculture_minister_party = 'DNVP';
 
@@ -547,7 +547,7 @@ Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitz_advisor = 0; // Max Seydewitz
+Q.seydewitrpc_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
@@ -556,7 +556,7 @@ Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
+Q.juchacrpc_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
 
 // Labor advisors
@@ -593,11 +593,11 @@ For more information on the politics and government of the German Republic, see 
 - @1928_historical: Begin (historical mode)
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; pcc_relation = 29; z_relation = 54; cpc_relation = 49; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; pcc_relation = 29; rpc_relation = 54; cpc_relation = 49; budget = 5;
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; pcc_relation = 16; cpc_relation = 31; budget = 3;
+on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; rpc_relation = 41; pcc_relation = 16; cpc_relation = 31; budget = 3;
 go-to: 1928_main
 
 @1928_historical
@@ -612,7 +612,7 @@ Q.reformist_dissent = 25;
 Q.left_dissent = 30;
 Q.labor_dissent = 25;
 Q.center_dissent = 25;
-Q.z_relation = 41;
+Q.rpc_relation = 41;
 Q.pcc_relation = 16;
 Q.cpc_relation = 31;
 Q.budget = 2;
@@ -621,7 +621,7 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
+audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/RPCurSonne_rpcurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
