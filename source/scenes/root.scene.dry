@@ -293,7 +293,7 @@ Q.catholics_other = 12;
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
 // source: wikipedia
-// note: the Z figures also include the BVP (Bavarian people's party)
+// note: the RPC figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.ccf_r = 26;
@@ -334,7 +334,7 @@ Q.economic_records = [];
 Q.president = "Hindenburg";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+Q.chancellor_party = 'RPC';
 Q.ccf_in_government = 0;
 Q.rpc_in_government = 1;
 Q.lpc_in_government = 0;
@@ -344,12 +344,12 @@ Q.pcc_in_government = 0;
 Q.nsdap_in_government = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = CCF + Z + LPC
+// Weimar coalition = CCF + RPC + LPC
 Q.in_weimar_coalition = 0;
-// Grand coalition = CCF + Z + BVP + LPC + CPC
-// also includes the "new grand coalition" of CCF + Z + BVP + LPC + CPC + Others
+// Grand coalition = CCF + RPC + BVP + LPC + CPC
+// also includes the "new grand coalition" of CCF + RPC + BVP + LPC + CPC + Others
 Q.in_grand_coalition = 0;
-// Popular front = CCF + PCC + Z + LPC
+// Popular front = CCF + PCC + RPC + LPC
 Q.in_popular_front = 0;
 // left coalition = CCF + PCC + left-splinters
 Q.in_left_front = 0;
@@ -382,13 +382,13 @@ Q.interior_minister_party = 'DNVP';
 Q.justice_minister = 'Hergt';
 Q.justice_minister_party = 'DNVP';
 Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
+Q.labor_minister_party = 'RPC';
 Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
 Q.economic_minister_party = 'CPC';
 Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
+Q.finance_minister_party = 'RPC';
 Q.agriculture_minister = 'Schiele';
 Q.agriculture_minister_party = 'DNVP';
 
@@ -621,7 +621,7 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_rpcurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
+audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/RPCurSonne_rpcurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
