@@ -287,7 +287,7 @@ The electoral system is essentially proportional, with the proportion of Reichst
 CCF: [+ ccf_r +]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ rpc_r +]
+RPC + BVP: [+ rpc_r +]
 
 # 1928: 10, 1930: 13
 PCC: [+ pcc_r +]
@@ -309,11 +309,11 @@ Other: [+ other_r +]
 
 **Potential coalitions:**
 
-Weimar Coalition (CCF + Z + LPC): [+ weimar_coalition +]
+Weimar Coalition (CCF + RPC + LPC): [+ weimar_coalition +]
 
-Grand Coalition (CCF + Z + BVP + LPC + CPC): [+ grand_coalition +]
+Grand Coalition (CCF + RPC + BVP + LPC + CPC): [+ grand_coalition +]
 
-Bourgeois Coalition (Z + BVP + LPC + CPC + Others): [+ bourgeois_coalition +]
+Bourgeois Coalition (RPC + BVP + LPC + CPC + Others): [+ bourgeois_coalition +]
 
-Right-wing Coalition (Z + BVP + CPC + Others + DNVP): [+ right_coalition +]
+Right-wing Coalition (RPC + BVP + CPC + Others + DNVP): [+ right_coalition +]
 
