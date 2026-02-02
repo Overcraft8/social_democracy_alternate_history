@@ -211,11 +211,11 @@ go-to: menu
 Current relations: [+ rpc_relation : relationships +]
 
 # TODO: replace this with the german state party after 1930
-**LPC** - *Liberal Party of Canada* - a rpc-left liberal party, popular among the intelligensia and educated middle class. They are pro free trade and have seen decline for supposed mismanagement during the Great Depression. They are one of the "Big 2" parties of the Canadian political system. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
+**LPC** - *Liberal Party of Canada* - a centre-left liberal party, popular among the intelligensia and educated middle class. They are pro free trade and have seen decline for supposed mismanagement during the Great Depression. They are one of the "Big 2" parties of the Canadian political system. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
 
 Current relations: [+ lpc_relation : relationships +]
 
-**CPC** - *Conservative Party of Canada* - a centre-right party, supported by the middle classes and bourgeoisie. It is more protectionist, socially conservative, and cautious of state intervention than their Liberal counterparts. They are one of the "Big 2" parties of the Canadian political system. 
+**CPC** - *Conservative Party of Canada* - a centre-right conservative party, supported by the middle classes and bourgeoisie. It is more protectionist, socially conservative, and cautious of state intervention than their Liberal counterparts. They are one of the "Big 2" parties of the Canadian political system. 
 
 Current relations: [+ cpc_relation : relationships +]
 
