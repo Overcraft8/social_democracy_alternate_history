@@ -306,12 +306,12 @@ if (Q.month_actions >= 1) {
         Q.workers_pcc += 5/12;
         Q.sa_strength += 50/12;
         Q.sh_strength += 100/12;
-        Q.rural_dnvp -= 15/12;
+        Q.rural_scp -= 15/12;
         Q.rural_nsdap += 10/12;
         Q.unemployed_nsdap += 18/12;
     } else if (Q.year == 1930) {
         Q.rural_nsdap += 10/12;
-        Q.rural_dnvp -= 15/12;
+        Q.rural_scp -= 15/12;
         Q.new_middle_cpc -= 5/12;
         Q.old_middle_cpc -= 6/12;
         Q.new_middle_ddp -= 5/12;
@@ -384,7 +384,7 @@ if (Q.month_actions >= 1) {
             Q.inflation -= 2/12;
             Q.catholics_z += 2/12;
             Q.workers -= 4/12;
-            Q.rural_dnvp -= 4/12;
+            Q.rural_scp -= 4/12;
             Q.rural_nsdap += 8/12;
             Q.new_middle_nsdap += 10/12;
             Q.old_middle_nsdap += 10/12;
@@ -393,8 +393,8 @@ if (Q.month_actions >= 1) {
             Q.workers_nsdap += 3/12;
             Q.workers_pcc += 3/12;
             Q.sa_strength += 200/12;
-            Q.new_middle_dnvp += 4/12;
-            Q.new_middle_dnvp += 4/12;
+            Q.new_middle_scp += 4/12;
+            Q.new_middle_scp += 4/12;
             Q.new_middle_cpc -= 4/12;
             Q.old_middle_cpc -= 4/12;
             Q.rural_cpc -= 4/12;
@@ -422,8 +422,8 @@ if (Q.month_actions >= 1) {
             if (Q.old_middle_cpc_normalized < 40) {
                 Q.old_middle_cpc += 6/12;
             }
-            if (Q.rural_dnvp_normalized < 40) {
-                Q.rural_dnvp += 6/12;
+            if (Q.rural_scp_normalized < 40) {
+                Q.rural_scp += 6/12;
             }
             if (Q.catholics_z_normalized < 40) {
                 Q.catholics_z += 6/12;
