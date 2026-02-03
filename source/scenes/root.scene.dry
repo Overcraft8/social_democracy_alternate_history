@@ -237,46 +237,46 @@ Q.sapd_formed = 0;
                     //////////// THIS IS PARTY SUPPORT BY CLASS IN 1928/////////////////////
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ccf = 23;
+Q.workers_ccf = 15;
 Q.workers_pcc = 4;
-Q.workers_rpc = 8;
-Q.workers_lpc = 30;
-Q.workers_cpc = 22;
-Q.workers_scp = 11;
+Q.workers_rpc = 9;
+Q.workers_lpc = 34;
+Q.workers_cpc = 24;
+Q.workers_scp = 12;
 Q.workers_nsdap = 0;
 Q.workers_other = 2;
 
 Q.old_middle_ccf = 5;
 Q.old_middle_pcc = 0;
 Q.old_middle_rpc = 5;
-Q.old_middle_lpc= 25;
-Q.old_middle_cpc = 30;
-Q.old_middle_scp = 15;
+Q.old_middle_lpc= 27;
+Q.old_middle_cpc = 33;
+Q.old_middle_scp = 10;
 Q.old_middle_nsdap = 0;
 Q.old_middle_other = 10;
 
 Q.new_middle_ccf = 10;
 Q.new_middle_pcc = 2;
 Q.new_middle_rpc = 12;
-Q.new_middle_lpc= 28;
-Q.new_middle_cpc = 26;
-Q.new_middle_scp = 20;
+Q.new_middle_lpc= 32;
+Q.new_middle_cpc = 29;
+Q.new_middle_scp = 13;
 Q.new_middle_nsdap = 0;
 Q.new_middle_other = 2;
 
-Q.rural_ccf = 28;
+Q.rural_ccf = 12;
 Q.rural_pcc = 2;
-Q.rural_rpc = 5;
-Q.rural_lpc= 5;
-Q.rural_cpc = 15;
-Q.rural_scp = 35;
+Q.rural_rpc = 8;
+Q.rural_lpc= 25;
+Q.rural_cpc = 30;
+Q.rural_scp = 15;
 Q.rural_nsdap = 5;
 Q.rural_other = 2;
 
-Q.unemployed_ccf = 35;
+Q.unemployed_ccf = 15;
 Q.unemployed_pcc = 10;
 Q.unemployed_rpc = 5;
-Q.unemployed_lpc = 20;
+Q.unemployed_lpc = 40;
 Q.unemployed_cpc = 20;
 Q.unemployed_scp = 5;
 Q.unemployed_nsdap = 0;
