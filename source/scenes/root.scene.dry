@@ -233,61 +233,63 @@ Q.parties = ['ccf', 'pcc', 'rpc', 'lpc', 'cpc', 'scp', 'nsdap', 'other'];
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
+
+                    //////////// THIS IS PARTY SUPPORT BY CLASS IN 1928/////////////////////
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ccf = 60;
-Q.workers_pcc = 20;
-Q.workers_rpc = 5;
-Q.workers_lpc = 0;
-Q.workers_cpc = 0;
-Q.workers_scp = 5;
+Q.workers_ccf = 23;
+Q.workers_pcc = 4;
+Q.workers_rpc = 8;
+Q.workers_lpc = 30;
+Q.workers_cpc = 22;
+Q.workers_scp = 11;
 Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.workers_other = 2;
 
 Q.old_middle_ccf = 5;
 Q.old_middle_pcc = 0;
 Q.old_middle_rpc = 5;
-Q.old_middle_lpc= 10;
-Q.old_middle_cpc = 25;
-Q.old_middle_scp = 25;
-Q.old_middle_nsdap = 10;
+Q.old_middle_lpc= 25;
+Q.old_middle_cpc = 30;
+Q.old_middle_scp = 15;
+Q.old_middle_nsdap = 0;
 Q.old_middle_other = 10;
 
-Q.new_middle_ccf = 5;
-Q.new_middle_pcc = 1;
-Q.new_middle_rpc = 10;
-Q.new_middle_lpc= 25;
-Q.new_middle_cpc = 25;
-Q.new_middle_scp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.new_middle_ccf = 10;
+Q.new_middle_pcc = 2;
+Q.new_middle_rpc = 12;
+Q.new_middle_lpc= 28;
+Q.new_middle_cpc = 26;
+Q.new_middle_scp = 20;
+Q.new_middle_nsdap = 0;
+Q.new_middle_other = 2;
 
-Q.rural_ccf = 10;
-Q.rural_pcc = 0;
+Q.rural_ccf = 28;
+Q.rural_pcc = 2;
 Q.rural_rpc = 5;
 Q.rural_lpc= 5;
 Q.rural_cpc = 15;
-Q.rural_scp = 45;
+Q.rural_scp = 35;
 Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_other = 2;
 
-Q.unemployed_ccf = 25;
-Q.unemployed_pcc = 55;
-Q.unemployed_rpc = 1;
-Q.unemployed_lpc = 0;
-Q.unemployed_cpc = 0;
+Q.unemployed_ccf = 35;
+Q.unemployed_pcc = 10;
+Q.unemployed_rpc = 5;
+Q.unemployed_lpc = 20;
+Q.unemployed_cpc = 20;
 Q.unemployed_scp = 5;
-Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
+Q.unemployed_nsdap = 0;
+Q.unemployed_other = 5;
 
 Q.catholics_ccf = 15;
 Q.catholics_pcc = 2;
-Q.catholics_rpc = 50;
-Q.catholics_lpc = 0;
-Q.catholics_cpc = 5;
-Q.catholics_scp = 5;
+Q.catholics_rpc = 20;
+Q.catholics_lpc = 25;
+Q.catholics_cpc = 25;
+Q.catholics_scp = 15;
 Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
+Q.catholics_other = 2;
 
 
 // Current Reichstag composition
