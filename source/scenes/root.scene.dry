@@ -237,10 +237,10 @@ Q.sapd_formed = 0;
                     //////////// THIS IS PARTY SUPPORT BY CLASS IN 1928/////////////////////
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ccf = 12;
+Q.workers_ccf = 9;
 Q.workers_pcc = 4;
-Q.workers_rpc = 9;
-Q.workers_lpc = 36;
+Q.workers_rpc = 7;
+Q.workers_lpc = 41;
 Q.workers_cpc = 25;
 Q.workers_scp = 12;
 Q.workers_nsdap = 0;
@@ -249,16 +249,16 @@ Q.workers_other = 2;
 Q.old_middle_ccf = 3;
 Q.old_middle_pcc = 0;
 Q.old_middle_rpc = 5;
-Q.old_middle_lpc= 37;
-Q.old_middle_cpc = 40;
+Q.old_middle_lpc= 39;
+Q.old_middle_cpc = 38;
 Q.old_middle_scp = 4;
 Q.old_middle_nsdap = 0;
 Q.old_middle_other = 2;
 
 Q.new_middle_ccf = 7;
 Q.new_middle_pcc = 2;
-Q.new_middle_rpc = 12;
-Q.new_middle_lpc= 40;
+Q.new_middle_rpc = 10;
+Q.new_middle_lpc= 42;
 Q.new_middle_cpc = 33;
 Q.new_middle_scp = 4;
 Q.new_middle_nsdap = 0;
@@ -282,11 +282,11 @@ Q.unemployed_scp = 2;
 Q.unemployed_nsdap = 0;
 Q.unemployed_other = 5;
 
-Q.catholics_ccf = 15;
+Q.catholics_ccf = 10;
 Q.catholics_pcc = 2;
-Q.catholics_rpc = 20;
-Q.catholics_lpc = 30;
-Q.catholics_cpc = 30;
+Q.catholics_rpc = 18;
+Q.catholics_lpc = 34;
+Q.catholics_cpc = 33;
 Q.catholics_scp = 5;
 Q.catholics_nsdap = 0;
 Q.catholics_other = 2;
@@ -549,7 +549,7 @@ Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitrpc_advisor = 0; // Max Seydewitz
+Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
@@ -558,7 +558,7 @@ Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
-Q.juchacrpc_advisor = 0; // Marie Juchacz
+Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
 
 // Labor advisors
@@ -632,5 +632,3 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 It is a dire time for the Dominion of Canada. R.B. Bennet's Conservative government has minimized government involvement since the onset of the crisis, leaving 15% of Canadians in poverty. His tariff raises have only shrunk the Canadian export market as other countries retaliate. Mackenzie King's Liberals have been promising change; as a consequence, their polling numbers have increased significantly. 
 
 Yet their victory is not set in stone. The CCF stands as the bulwark of the common man against the big business parties. The task of Democratic Socialism is to prepare for the next election. Perhaps the next government will have a socialist majority.
-
-
