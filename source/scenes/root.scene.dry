@@ -233,6 +233,8 @@ Q.parties = ['ccf', 'pcc', 'rpc', 'lpc', 'cpc', 'scp', 'nsdap', 'other'];
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
+
+                    //////////// THIS IS PARTY SUPPORT BY CLASS IN 1928/////////////////////
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_ccf = 9;

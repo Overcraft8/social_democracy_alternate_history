@@ -299,7 +299,7 @@ LPC: [+ lpc_r +]
 CPC: [+ cpc_r +]
 
 # 1928: 14, 1930: 7
-DNVP: [+ scp_r +]
+SCP: [+ scp_r +]
 
 # 1928: 3, 1930: 18
 NSDAP: [+ nsdap_r +]
@@ -315,5 +315,5 @@ Grand Coalition (CCF + RPC + BVP + LPC + CPC): [+ grand_coalition +]
 
 Bourgeois Coalition (RPC + BVP + LPC + CPC + Others): [+ bourgeois_coalition +]
 
-Right-wing Coalition (RPC + BVP + CPC + Others + DNVP): [+ right_coalition +]
+Right-wing Coalition (RPC + BVP + CPC + Others + SCP): [+ right_coalition +]
 
