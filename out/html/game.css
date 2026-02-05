@@ -541,27 +541,27 @@ table {
     fill: #8B0000;
 }
 .seat.ccf {
-    fill: #E3000F;
+    fill: #FFBB33;
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.lpc {
-    fill: #DCCA4A;
+    fill: #FF1940;
 }
 .seat.rpc {
-    fill: #000;
+    fill: #FFF7CC;
 }
 .seat.bvp {
     fill: #69A2BE;
 }
 .seat.cpc {
-    fill: #D5AC27;
+    fill: #1919FF;
 }
 .seat.other {
     fill: #909090;
 }
 .seat.scp {
-    fill: #3F7BC1;
+    fill: #33FF55;
 }
 .seat.nsdap {
     fill: #954B00;
