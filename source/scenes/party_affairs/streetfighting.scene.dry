@@ -31,7 +31,7 @@ Many Reichsbanner members are not ready for actual fighting, and thus quit. Howe
 subtitle: -[+ rb_militarization_cost +] resource
 choose-if: resources >= rb_militarization_cost
 unavailable-subtitle: Not enough resources ([+ rb_militarization_cost +] needed).
-on-arrival: resources -= rb_militarization_cost; rb_militancy += 0.06; rb_strength += 50; sa_strength += 50; z_relation -= 5 if historical_mode 
+on-arrival: resources -= rb_militarization_cost; rb_militancy += 0.06; rb_strength += 50; sa_strength += 50; rpc_relation -= 5 if historical_mode 
 
 We have increased training and purchased more armaments for the Reichsbanner.
 
@@ -46,7 +46,7 @@ max-visits: 2
 As part of the Iron Front, we are increasing coordination between the Reichsbanner and the unions, and many union members want to become more involved.
 
 @prussian_police_training
-view-if: spd_prussia == 1 and prussian_police_loyalty > 0.5
+view-if: ccf_prussia == 1 and prussian_police_loyalty > 0.5
 on-arrival: rb_militancy += 0.05; sa_strength += 50; prussian_police_training += 1
 
 The loyal sections of the Prussian police can help train the Reichsbanner.
@@ -57,9 +57,9 @@ on-arrival: rb_militancy -= 0.02; rb_strength -= 50; pacifism += 1
 By not fighting, the strength of the Reichsbanner atrophies. Pacifists in the party are gaining the upper hand.
 
 @truce_rfb
-choose-if: kpd_relation >= 45
-view-if: kpd_truce == 0
-unavailable-subtitle: The KPD is not interested.
-on-arrival: kpd_truce = 1; kpd_relation += 5; rfb_strength += 50; rb_strength += 50; sa_strength += 50;
+choose-if: pcc_relation >= 45
+view-if: pcc_truce == 0
+unavailable-subtitle: The PCC is not interested.
+on-arrival: pcc_truce = 1; pcc_relation += 5; rfb_strength += 50; rb_strength += 50; sa_strength += 50;
 
-We have made at least a temporary truce with the KPD, so that our respective paramilitaries will stop fighting.
+We have made at least a temporary truce with the PCC, so that our respective paramilitaries will stop fighting.
