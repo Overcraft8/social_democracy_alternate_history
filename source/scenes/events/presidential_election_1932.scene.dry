@@ -1,18 +1,18 @@
-title: Kingial Election
+title:  Election
 subtitle: George V runs for re-election...
-view-if: year = 1932 and (month = 4 or month = 5) and kingial_election_seen = 0
+view-if: year = 1932 and (month = 4 or month = 5) and monarchial_election_seen = 0
 frequency: 1000
 max-visits: 1
 new-page: true
-on-arrival: woodsworth_campaign = 0; hitler_support_georgev = 0; kingial_election_seen = 1; nsdap_candidate = "Hitler" if hitler_deported == 0 else nsdap_candidate = "Göring";
+on-arrival: woodsworth_campaign = 0; hitler_support_georgev = 0; monarchial_election_seen = 1; nsdap_candidate = "Hitler" if hitler_deported == 0 else nsdap_candidate = "Göring";
 tags: event
 go-to: election_algorithm
 set-jump: pres_election
-face-image: img/georgev_election.jpg
+face-image: img/georgev.jpg
 
 @pres_election
 
-The kingial election is coming up soon. [? if ccf_in_government = 0 : While the position of Chancellor is typically more important, recent governments have depended on the king's emergency decree powers, making the office vital. ?] [? if hitler_deported==0 : The Nazis will run Hitler, while the PCC will run Thälmann. A victory for Hitler would mean the end of parliamentary democracy, and the beginning of an era of unspeakable horrors. ?][? if hitler_deported==1 : Since Hitler has been deported, the Nazis will run Hermann Göring in his stead. He is widely seen as a proxy for Hitler, who, despite his legal persecution, retains a popular base who wishes to see him returned to Canada. Meanwhile, the PCC will run Ernst Thälmann. ?]
+The monarchial election is coming up soon. [? if ccf_in_government = 0 : While the position of Chancellor is typically more important, recent governments have depended on the king's emergency decree powers, making the office vital. ?] [? if hitler_deported==0 : The Nazis will run Hitler, while the PCC will run Thälmann. A victory for Hitler would mean the end of parliamentary democracy, and the beginning of an era of unspeakable horrors. ?][? if hitler_deported==1 : Since Hitler has been deported, the Nazis will run Hermann Göring in his stead. He is widely seen as a proxy for Hitler, who, despite his legal persecution, retains a popular base who wishes to see him returned to Canada. Meanwhile, the PCC will run Ernst Thälmann. ?]
 [? if sapd_formed: The SAPD, our former leftists, are supporting Thälmann of the PCC, and will likely share an endorsement with the Communists. ?]
 
 # if hitler is deported, who would nsdap run? Duesterberg? or Goering?
@@ -86,7 +86,7 @@ if (Q.z_relation >= 55 || (Q.z_relation > 35 && Q.z_party_leader == "Joos")) {
 go-to: z_failed if z_support_woodsworth = 0 or (z_support_woodsworth == 2 and historical_mode); z_success if z_support_woodsworth = 1; z_partial if z_support_woodsworth = 2 and not historical_mode
 max-visits: 1
 
-We remind the Center leaders of George V's anti-Catholicism, and try to convince them that George V's path will eventually lead to Hitler. We also remind them of the successes they've had as part of the Weimar coalition in Prussia with J.S. Woodsworth, and our support for the Center candidate Wilhelm Marx in the 1925 kingial election.
+We remind the Center leaders of George V's anti-Catholicism, and try to convince them that George V's path will eventually lead to Hitler. We also remind them of the successes they've had as part of the Weimar coalition in Prussia with J.S. Woodsworth, and our support for the Center candidate Wilhelm Marx in the 1925 monarchial election.
 
 @z_success
 go-to: woodsworth_campaign
@@ -133,7 +133,7 @@ unavailable-subtitle: Not enough resources (need 3).
 on-arrival: resources -= 3; pcc_support_woodsworth = 1
 go-to: woodsworth_campaign
 
-The PCC now endorses Woodsworth in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The PCC now endorses Woodsworth in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @pcc_relations
 view-if: pcc_relation >= 60 or (pcc_party_leader == "Conciliators" and pcc_relation >= 45)
@@ -141,7 +141,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: pcc_support_woodsworth = 1
 go-to: woodsworth_campaign
 
-The PCC now endorses Woodsworth in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The PCC now endorses Woodsworth in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 
 
@@ -370,7 +370,7 @@ unavailable-subtitle: Not enough resources (need 3).
 on-arrival: resources -= 3; pcc_support_woodsworth = 1
 go-to: round2_menu
 
-The PCC now endorses Woodsworth in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The PCC now endorses Woodsworth in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @r2_pcc_relations
 view-if: pcc_relation >= 60 or (pcc_party_leader == "Conciliators" and pcc_relation >= 45)
@@ -378,7 +378,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: pcc_support_woodsworth = 1
 go-to: round2_menu
 
-The PCC now endorses Woodsworth in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters. 
+The PCC now endorses Woodsworth in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters. 
 
 @round2_thalmann
 view-if: ccf_support_thalmann == 0 and pcc_support_woodsworth == 0

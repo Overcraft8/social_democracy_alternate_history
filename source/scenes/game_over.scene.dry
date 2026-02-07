@@ -8,7 +8,7 @@ Q.game_over = 1;
 // Eiserne Front - Form the Iron Front.
 this.achieve('game_completed');
 
-// Roter Zar von Preußen - At the end of the game, J.S. Woodsworth is king, chancellor, and minister-king of prussia at the same time.
+// Roter Zar von Preußen - At the end of the game, J.S. Woodsworth is king, chancellor, and Premier of prussia at the same time.
 if (Q.king == 'Woodsworth' && Q.chancellor == 'Woodsworth' && Q.ccf_prussia) {
     this.achieve('red_tzar_of_prussia');
 }
@@ -338,7 +338,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if game_achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Minister-King. ?]
+[? if game_achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Premier. ?]
 
 [? if game_achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the CCF and PCC. ?]
 
@@ -418,7 +418,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected king. ?]
 
-[? if game_achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced kingial power. ?]
+[? if game_achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced monarchial power. ?]
 
 [? if game_achievement_republik_der_wissenschaft : **Republik der Wissenschaft** - Albert Einstein has been elected king. ?]
 
@@ -447,7 +447,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Minister-King. ?]
+[? if achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Premier. ?]
 
 [? if achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the CCF and PCC. ?]
 
@@ -527,7 +527,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected king. ?]
 
-[? if achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced kingial power. ?]
+[? if achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced monarchial power. ?]
 
 [? if achievement_republik_der_wissenschaft : **Republik der Wissenschaft** - Albert Einstein has been elected king. ?]
 
@@ -554,7 +554,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_bollwerk_der_demokratie: **Bollwerk der Demokratie** - Resist the Prussian Coup and win. ?]
 
-[? if not achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Minister-King. ?]
+[? if not achievement_red_tzar_of_prussia : **Roter Zar von Preußen** - J.S. Woodsworth is King, Chancellor, and Premier. ?]
 
 [? if not achievement_einheitsfront: **Einheitsfront** - Form a government consisting of the CCF and PCC. ?]
 
@@ -634,7 +634,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected king. ?]
 
-[? if not achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced kingial power. ?]
+[? if not achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected king, and constitutional reforms have reduced monarchial power. ?]
 
 [? if not achievement_republik_der_wissenschaft : **Republik der Wissenschaft** - Albert Einstein has been elected king. ?]
 

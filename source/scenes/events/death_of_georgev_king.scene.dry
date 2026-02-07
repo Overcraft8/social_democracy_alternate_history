@@ -13,7 +13,7 @@ King Paul von George V has passed away at age 86. An era of history is closing, 
 
 The nation engages in an outpouring of grief for its war hero and king, with even some sympathy among committed republicans and socialists. After all, George V steered the republic through some of its most challenging times, without giving in to extremists on the far right. Perhaps he is one reason democracy remains alive.
 
-New kingial elections are to be held as soon as possible. The German political landscape is wide open, with contenders from all over the political space. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Bumke ?][? if judicial_reform >= 4 : Hermann Großmann ?] serves as the acting king.
+New monarchial elections are to be held as soon as possible. The German political landscape is wide open, with contenders from all over the political space. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Bumke ?][? if judicial_reform >= 4 : Hermann Großmann ?] serves as the acting king.
 
 # Hermann Großmann is the supreme court chief justice in judicial reform.
 
@@ -36,11 +36,11 @@ Many republicans of the Center, [+ lpc_name +], and CCF float the idea of runnin
 Barring that, the Center and [+ lpc_name +] are planning to run separate candidates in the first round if the CCF runs its own candidate. The Center is considering nominating Konrad Adenauer, mayor of Köln and member of the Prussian state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [+ lpc_name +] might nominate Otto Gessler, former defense minister, who has crossover appeal to conservatives in the CPC and other parties who dislike the SCP-NSDAP front.
 
 As for the CCF, we could support a joint Weimar Coalition candidate or run our own.
-[? if woodsworth_campaign : J.S. Woodsworth is tired. He ran and failed in the previous two kingial elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if woodsworth_campaign = 0 and not ccf_prussia: J.S. Woodsworth is tired. After being deposed in Prussia, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if woodsworth_campaign = 0 and ccf_prussia : J.S. Woodsworth is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
+[? if woodsworth_campaign : J.S. Woodsworth is tired. He ran and failed in the previous two monarchial elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if woodsworth_campaign = 0 and not ccf_prussia: J.S. Woodsworth is tired. After being deposed in Prussia, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if woodsworth_campaign = 0 and ccf_prussia : J.S. Woodsworth is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
 Kurt Schumacher is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
 [? if womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0: Or, perhaps it is time for a woman to become king. Canada and the CCF have been leading on women's rights for years, and it is only fitting that we should elect the world's first female king. Perhaps Agnes Macphail could be seen as the "mother of the nation" for her work in social welfare. However, her divorce 28 years ago might make it difficult for the Catholics to support her. ?]
 
-[? if kingial_powers >= 1 and pro_republic >= 60 and pacifism >= 3: Since Canada has been largely democratized and kingial powers reduced, we can also support another non-traditional political figure, someone from the cultural, scientific, or literary spheres. They will perhaps be the symbol of a new Canada that has moved beyond its past. ?]
+[? if monarchial_powers >= 1 and pro_republic >= 60 and pacifism >= 3: Since Canada has been largely democratized and monarchial powers reduced, we can also support another non-traditional political figure, someone from the cultural, scientific, or literary spheres. They will perhaps be the symbol of a new Canada that has moved beyond its past. ?]
 # if J.S. Woodsworth ran last time: he can only run if he controls Prussia. Otherwise, it's Kurt Schumacher.
 
 # options: 
@@ -131,7 +131,7 @@ choose-if: resources >= 2
 on-arrival: ccf_candidate = "Schumacher"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Kurt Schumacher to be our kingial candidate.
+We have nominated Kurt Schumacher to be our monarchial candidate.
 
 
 @macphail_r1
@@ -142,10 +142,10 @@ choose-if: resources >= 2
 on-arrival: ccf_candidate = "Macphail"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Agnes Macphail as our kingial candidate, the first woman ever to be nominated for this position!
+We have nominated Agnes Macphail as our monarchial candidate, the first woman ever to be nominated for this position!
 
 @cultural_figure
-view-if: kingial_powers >= 1 and pro_republic >= 60 and pacifism >= 3
+view-if: monarchial_powers >= 1 and pro_republic >= 60 and pacifism >= 3
 subtitle: The next king should be a symbol of the new Canada...
 
 Since the presidency has been made a largely ceremonial figure by our reforms, we might set a precedent by nominating a nonpartisan pro-democracy figure from the cultural, scientific, or literary worlds. There are many potential candidates...
@@ -187,7 +187,7 @@ choose-if: resources >= 2
 on-arrival: ccf_candidate = "Ossietzky"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Carl von Ossietzky is a left-wing journalist who is the publisher of the Weltbühne, a news magazine. He is most known for exposing the secret German rearmament program in 1929, which brought him international renown. In the 1932 kingial election, he endorsed the Communist Thälmann.
+Carl von Ossietzky is a left-wing journalist who is the publisher of the Weltbühne, a news magazine. He is most known for exposing the secret German rearmament program in 1929, which brought him international renown. In the 1932 monarchial election, he endorsed the Communist Thälmann.
 
 Ossietzky is extremely reluctant to become a politician, and has been an iconoclastic figure his entire life, criticizing the CCF as being part of the establishment. It is with a sense of irony that he accepts our nomination.
 
@@ -332,7 +332,7 @@ unavailable-subtitle: Not enough resources (need 3).
 on-arrival: resources -= 3; pcc_candidate = ccf_candidate; sapd_candidate = ccf_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The PCC now endorses [+ ccf_candidate +] in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The PCC now endorses [+ ccf_candidate +] in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @pcc_relations
 view-if: pcc_relation >= 60 or (pcc_party_leader == "Conciliators" and pcc_relation >= 45)
@@ -340,7 +340,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: pcc_candidate = ccf_candidate; sapd_candidate = ccf_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The PCC now endorses [+ ccf_candidate +] in the kingial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The PCC now endorses [+ ccf_candidate +] in the monarchial election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 
 @convince_cpc_ccf
@@ -648,7 +648,7 @@ With Seldte's victory, the balance of power passes to the Nazis. [? if hitler_de
 - @hitler_constitutional: This is blatantly unconstitutional!
 
 @hitler_constitutional
-view-if: kingial_powers
+view-if: monarchial_powers
 
 We have passed a constitutional amendment preventing the king from having the power to arbitrarily dismiss a government. To undo this, the far right has called a plebiscite on a new constitutional amendment. Stormtroopers are in the streets, "convincing" voters to support their proposal. Canada is nearing civil war.
 
@@ -691,7 +691,7 @@ on-arrival: king = winner; king = "Thälmann" if king == "Thalmann"; king = "Mü
 The election has been won by [+ winner_desc +].
 
 @thalmann_victory
-go-to: thalmann_democrat if kingial_powers; thalmann_civil_war if not kingial_powers
+go-to: thalmann_democrat if monarchial_powers; thalmann_civil_war if not monarchial_powers
 
 @thalmann_civil_war
 on-arrival: pcc_relation = 80
@@ -704,7 +704,7 @@ Thälmann wastes no time in consolidating power, using all means available to re
 
 @thalmann_democrat
 
-Despite the victory of the anti-constitutionalist Thälmann, he appears to be respecting the constitutional constraints on kingial power, at least for now. There is no appetite on the right for a coup at this moment. The bourgeoisie have to live with a communist king, at least for now.
+Despite the victory of the anti-constitutionalist Thälmann, he appears to be respecting the constitutional constraints on monarchial power, at least for now. There is no appetite on the right for a coup at this moment. The bourgeoisie have to live with a communist king, at least for now.
 
 
 @munzenberg_victory
@@ -734,7 +734,7 @@ go-to: nazis_lose
 
 
 @bundesrepublik_win
-go-to: bundesrepublik_achieve if kingial_powers; nazis_lose if not kingial_powers
+go-to: bundesrepublik_achieve if monarchial_powers; nazis_lose if not monarchial_powers
 
 @bundesrepublik_achieve
 achievement: bundesrepublik
