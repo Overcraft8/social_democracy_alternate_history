@@ -97,7 +97,7 @@ THree_Arrows_election_poster.png: Fritz, Plakatsammlung Karl. English:  Election
 
 poster_0.jpg: Kirchbach, Design Fritz Gottfried. English:  Gleiche Rechte Gleiche Pflichten. German Social Democrat Party Election Poster 1919. 1919. http://www.dhm.de/ausstellungen/grundrechte/kap1_2.htm, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Gleiche_Rechte_Gleiche_Pflichten,_social_democrat_party_poster_1919.jpg. Public Domain
 
-braun.jpg: Kirchbach, Poster artist: Fritz Gottfried. Plakat Der CCF Zur Reichstagswahl. 3 Mar. 1925. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-01196,_Plakat_der_CCF_zur_Reichstagswahl.jpg. Public Domain
+woodsworth.jpg: Kirchbach, Poster artist: Fritz Gottfried. Plakat Der CCF Zur Reichstagswahl. 3 Mar. 1925. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-01196,_Plakat_der_CCF_zur_Reichstagswahl.jpg. Public Domain
 
 vorwarts_2.jpg: Julie Wolfthorn - VORWÄRTS. Mark 1,10 pro Monat; Frei Ins Haus. Farblithographie, 1360 Mm x 930 Mm, Vor 1902, Druck: Kunstanstalt Hollerbaum & Schmidt, Berlin. before 1902date QS:P,+ - -00T00:00:00Z/7,P1326,+1902-00-00T00:00:00Z/9 1902. http://www.kulturpool.at/plugins/kulturpool/showitem.action?itemId=4296109451, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Julie_Wolfthorn_-_VORW%C3%84RTS._Mark_1,10_pro_Monat;_frei_ins_Haus.jpg. Public Domain
 
@@ -116,7 +116,7 @@ CrispienArthur.jpg: author, Unknown authorUnknown. Arthur Crispien. 13 Oct. 1931
 
 MüllerHermann.jpg: ---. Hermann Müller. 1928date QS:P571,+ - -00T00:00:00Z/9 1928. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1979-122-28A,_Hermann_M%C3%BCller.jpg. CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
 
-BraunOtto.jpg: ---. Otto Braun Und Rudolf Breitscheid. 4 Apr. 1932. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-13412,_Otto_Braun_und_Rudolf_Breitscheid.jpg. CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
+WoodsworthOtto.jpg: ---. Otto Woodsworth Und Rudolf Breitscheid. 4 Apr. 1932. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-13412,_Otto_Woodsworth_und_Rudolf_Breitscheid.jpg. CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
 
 WelsOtto.jpg: ---. Otto Wels [1873 - 1939], Deutscher Politiker (CCF). 22 Nov. 2006. http://germanhistorydocs.ghi-dc.org/images/highres_10002240%20copy.jpg, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Ottowelsportait.jpg. CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/deed.en
 

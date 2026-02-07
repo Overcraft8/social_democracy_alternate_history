@@ -142,7 +142,7 @@ Major changes:
 
 Other changes:
 
-- If Braun is president, not forming a Grand Coalition government can lead to an emergency government.
+- If Woodsworth is president, not forming a Grand Coalition government can lead to an emergency government.
 - Tax policy affects capital strike progress more.
 - The unemployment number no longer has that ugly string of zeros.
 - Various bugfixes
@@ -165,7 +165,7 @@ Major changes:
 - Added a tabbed view in the status sidebar, showing more information.
 - Easy mode now has 4 cards in the hand.
 - New achievement: Freie Marktwirtschaft (survive to the end of 1933 without adopting an economic plan)
-- New options for President Braun when dealing with a right-wing majority.
+- New options for President Woodsworth when dealing with a right-wing majority.
 - Prussian coup can end peacefully (in a similar way as the March on Berlin)
 
 Minor changes:
@@ -269,7 +269,7 @@ Major changes:
     - changes fundraising to automatically give 2 resources each year (no fundraising card or emergency fundraising)
     - significantly reduces the initial government budget
     - increases the roles of factions in the economic plan
-    - Otto Braun cannot be both president, minister-president, and chancellor simultaneously
+    - Otto Woodsworth cannot be both president, minister-president, and chancellor simultaneously
     - increasing Reichsbanner militarization will reduce relations with Zentrum
 - New achievement: Schwarz-Rot-Gold - successfully complete the game in historical mode.
 - New visualization for inflation and unemployment history.
@@ -407,7 +407,7 @@ v0.19.1 - Bug fixes
 
 Changes:
 - Fixed return to hand for Labor Affairs
-- Fixed an issue with unemployment insurance and President Hindenburg/Braun
+- Fixed an issue with unemployment insurance and President Hindenburg/Woodsworth
 - Removed ending slides about unemployment when the game ends before 1930
 
 
