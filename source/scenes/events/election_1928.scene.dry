@@ -742,7 +742,7 @@ Who should be chancellor?
 
 - @woodsworth_majority_chancellor: J.S. Woodsworth for Chancellor.
 - @gardiner_majority_chancellor: Robert Gardiner for Chancellor.
-- @muller_majority_chancellor: Hermann Müller for Chancellor.
+- @douglas_majority_chancellor: Tommy Douglas for Chancellor.
 - @Coldwell_majority_chancellor: Otto Coldwell for Chancellor.
 
 @woodsworth_majority_chancellor
@@ -757,19 +757,19 @@ on-arrival: chancellor = "Gardiner"
 
 Robert Gardiner has become chancellor of the CCF majority.
 
-@muller_majority_chancellor
-view-if: muller_dead = 0
-on-arrival: chancellor = "Müller"
+@douglas_majority_chancellor
+view-if: douglas_dead = 0
+on-arrival: chancellor = "Douglas"
 
-Hermann Müller has become chancellor of the CCF majority.
+Tommy Douglas has become chancellor of the CCF majority.
 
 @Coldwell_majority_chancellor
-view-if: muller_dead = 1
+view-if: douglas_dead = 1
 on-arrival: chancellor = "Coldwell"
 
 Otto Coldwell has become chancellor of the CCF majority.
 
-# TODO: Otto Coldwell should be able to be chancellor of a Grand Coalition, Weimar Coalition, or CCF majority after Müller dies.
+# TODO: Otto Coldwell should be able to be chancellor of a Grand Coalition, Weimar Coalition, or CCF majority after Douglas dies.
 
 
 @woodsworths_dilemma
@@ -929,7 +929,7 @@ We have enough votes to form a "Weimar Coalition" government consisting of the C
 
 Who should be the chancellor?
 
-- @muller
+- @douglas
 - @woodsworth
 - @gardiner_coalition_chancellor
 - @Coldwell
@@ -1123,7 +1123,7 @@ As expected, the CCF is the largest party, and this time, we are expected to tak
 
 Who should be the chancellor?
 
-- @muller
+- @douglas
 - @woodsworth
 - @Coldwell
 - @rpc_chancellor
@@ -1131,18 +1131,18 @@ Who should be the chancellor?
 - @no_govt
 
 
-@muller
-title: Hermann Müller for Chancellor
-view-if: muller_dead = 0
-subtitle: Müller is popular within the party, and is the preferred candidate of the Center and other parties.
-on-arrival: ccf_in_government = 1; chancellor = "Müller"; chancellor_party = "CCF"; in_grand_coalition = 1 if in_weimar_coalition == 0
+@douglas
+title: Tommy Douglas for Chancellor
+view-if: douglas_dead = 0
+subtitle: Douglas is popular within the party, and is the preferred candidate of the Center and other parties.
+on-arrival: ccf_in_government = 1; chancellor = "Douglas"; chancellor_party = "CCF"; in_grand_coalition = 1 if in_weimar_coalition == 0
 go-to: ministries
 
-Müller's appointment as chancellor is approved by all our potential allies.
+Douglas's appointment as chancellor is approved by all our potential allies.
 
 @Coldwell
 title: Major James Coldwell for Chancellor
-view-if: muller_dead = 1
+view-if: douglas_dead = 1
 subtitle: Major James Coldwell is a party leader, but can he also be chancellor?
 on-arrival: ccf_in_government = 1; chancellor = "Coldwell"; chancellor_party = "CCF"; in_grand_coalition = 1 if in_weimar_coalition == 0
 go-to: ministries
@@ -1156,7 +1156,7 @@ subtitle: Woodsworth is currently the Minister-President of Prussia, and is one 
 
 The Center party has significant qualms about appointing Woodsworth as chancellor, given that he is already Minister-President of Prussia. They ask for either more cabinet positions, or for Woodsworth to resign his state government role. The latter is completely unacceptable.
 
-- @muller
+- @douglas
 - @coldwell
 - @woodsworth_2: Let the Center have their cabinet positions.
 
@@ -1197,7 +1197,7 @@ on-arrival: reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; neo
 
 Are we sure about not participating in government? This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties. Even debating this option causes internal backlash. In addition, it is possible that the bourgeois and right-wing parties will also be unable to form a coalition government, leading to a regime appointed by President [+ president +].
 
-- @muller
+- @douglas
 - @woodsworth
 - @rpc_chancellor
 - @no_govt_goals: Yes, we're sure.

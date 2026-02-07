@@ -538,16 +538,16 @@ Q.march_on_berlin_timer = 0;
 
 // all the initial advisors are centrists.
 Q.coldwell_advisor = 1; // Major James Coldwell
-Q.muller_advisor = 1; // Hermann Müller
-Q.muller_dead = 0;
+Q.douglas_advisor = 1; // Tommy Douglas
+Q.douglas_dead = 0;
 // okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
 Q.crispien_advisor = 0; // Arthur Crispien
 Q.scott_advisor = 1; // Frank Scott
 
 // left advisors
 Q.jamieson_advisor = 0; // Laura Jamieson
-Q.levi_advisor = 0; // Paul Levi
-Q.levi_dead = 0;
+Q.stanley_advisor = 0; // Stanley Knowles
+Q.stanley_dead = 0;
 Q.winch_advisor = 0; // Ernest Winch
 Q.irvine_advisor = 0; // William Irvine
 
@@ -576,7 +576,7 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.underhill_advisor = 0; // Frank Underhill
-Q.stampfer_advisor = 0; // Friedrich Stampfer
+Q.spry_advisor = 0; // Graham Spry
 !}
 set-bg: img/vintage-map-of-canada-1930s-2FMG1KK.jpg
 new-page: true

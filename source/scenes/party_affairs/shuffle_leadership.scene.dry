@@ -51,14 +51,14 @@ go-to: rm_main
 
 Coldwell has been removed as an advisor. The Centrist faction disapproves.
 
-@remove_muller
-title: Remove Müller
-view-if: muller_advisor = 1
+@remove_douglas
+title: Remove Douglas
+view-if: douglas_advisor = 1
 tags: remove_advisor
-on-arrival: muller_advisor = 0; center_dissent += 5; n_advisors -= 1
+on-arrival: douglas_advisor = 0; center_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Müller has been removed as an advisor. The Centrist faction disapproves.
+Douglas has been removed as an advisor. The Centrist faction disapproves.
 
 
 @remove_gardiner
@@ -151,14 +151,14 @@ Forsey has been removed as an advisor. The Labor faction disapproves.
 
 # left
 
-@remove_levi
-title: Remove Levi
-view-if: levi_advisor = 1
+@remove_stanley
+title: Remove Stanley
+view-if: stanley_advisor = 1
 tags: remove_advisor
-on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
+on-arrival: stanley_advisor = 0; left_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Levi has been removed as an advisor. The Leftist faction disapproves.
+Stanley has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_jamieson
 title: Remove Jamieson
@@ -231,7 +231,7 @@ Schumacher has been removed as an advisor. The Neorevisionist faction disapprove
 
 ## nonfactional
 
-# tbh I'm not sure if Wright should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
+# tbh I'm not sure if Wright should be a reformist or nonfactional. same for spry. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
 
 @remove_wright
 title: Remove Wright
@@ -254,14 +254,14 @@ go-to: rm_main
 
 Hirschfeld has been removed as an advisor. 
 
-@remove_stampfer
-title: Remove Stampfer
-view-if: stampfer_advisor = 1
+@remove_spry
+title: Remove Spry
+view-if: spry_advisor = 1
 tags: remove_advisor
-on-arrival: stampfer_advisor = 0; n_advisors -= 1
+on-arrival: spry_advisor = 0; n_advisors -= 1
 go-to: rm_main
 
-Stampfer has been removed as an advisor. 
+Spry has been removed as an advisor. 
 
 @remove_underhill
 title: Remove Underhill
@@ -353,17 +353,17 @@ go-to: advisor_menu
 
 Major James Coldwell is now an advisor.
 
-@add_muller
-title: Hermann Müller
-subtitle: Hermann Müller is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
+@add_douglas
+title: Tommy Douglas
+subtitle: Tommy Douglas is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
 is-card: true
-card-image: img/portraits/MüllerHermann.jpg
+card-image: img/portraits/DouglasTommy.jpg
 tags: center_advisor
-view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: muller_advisor = 1; n_advisors += 1
+view-if: douglas_advisor = 0 and douglas_dead = 0 and n_advisors < 3 and centrists_resign = 0
+on-arrival: douglas_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Hermann Müller is now an advisor.
+Tommy Douglas is now an advisor.
 
 @add_gardiner
 title: Robert Gardiner
@@ -432,17 +432,17 @@ Robert Connell is now an advisor.
 
 # left
 
-@add_levi
-title: Paul Levi
-subtitle: Paul Levi is a former PCC leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the PCC ?]
+@add_stanley
+title: Stanley Knowles
+subtitle: Stanley Knowles is a former PCC leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the PCC ?]
 is-card: true
-card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/KnowlesStanley.jpg
+view-if: stanley_advisor = 0 and stanley_dead = 0 and n_advisors < 3 and left_split = 0
+on-arrival: stanley_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Paul Levi is now an advisor.
+Stanley Knowles is now an advisor.
 
 @add_jamieson
 title: Laura Jamieson
@@ -611,7 +611,7 @@ tags: nonfactional_advisor
 
 Magnus Hirschfeld is now an advisor.
 
-# TODO: add underhill, stampfer
+# TODO: add underhill, spry
 
 @add_underhill
 title: Frank Underhill
@@ -626,16 +626,16 @@ tags: nonfactional_advisor
 Frank Underhill is now an advisor.
 
 
-@add_stampfer
-title: Friedrich Stampfer
-subtitle: Friedrich Stampfer is the long-time editor-in-chief of Vorwärts, our party newspaper. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the PCC ?]
+@add_spry
+title: Graham Spry
+subtitle: Graham Spry is the long-time editor-in-chief of Vorwärts, our party newspaper. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the PCC ?]
 is-card: true
-card-image: img/portraits/StampferFriedrich.jpg
-view-if: stampfer_advisor = 0 and n_advisors < 3
-on-arrival: stampfer_advisor = 1; n_advisors += 1
+card-image: img/portraits/SpryGraham.jpg
+view-if: spry_advisor = 0 and n_advisors < 3
+on-arrival: spry_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-Friedrich Stampfer is now an advisor.
+Graham Spry is now an advisor.
 
 

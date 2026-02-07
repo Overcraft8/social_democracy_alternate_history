@@ -1,13 +1,13 @@
-title: Friedrich Stampfer
+title: Graham Spry
 is-pinned-card: true
 tags: advisor
-card-image: img/portraits/StampferFriedrich.jpg
-view-if: stampfer_advisor = 1
+card-image: img/portraits/SpryGraham.jpg
+view-if: spry_advisor = 1
 new-page: true 
 
-= Friedrich Stampfer
+= Graham Spry
 
-Friedrich Stampfer is the long-time editor-in-chief of Vorwärts, our party newspaper, and also a Reichstag member. He was historically part of the Majority CCF that supported our participation in the Great War, but also supports cooperation with the PCC to save the Republic.
+Graham Spry is the long-time editor-in-chief of Vorwärts, our party newspaper, and also a Reichstag member. He was historically part of the Majority CCF that supported our participation in the Great War, but also supports cooperation with the PCC to save the Republic.
 
 - @media_
 - @faction_support_
@@ -72,4 +72,4 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 2; pcc_relation += 4*(1-dissent); reformist_dissent += 2
 
-Stampfer works towards closer ties with the PCC through our media.
+Spry works towards closer ties with the PCC through our media.
