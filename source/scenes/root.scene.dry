@@ -545,7 +545,7 @@ Q.crispien_advisor = 0; // Arthur Crispien
 Q.scott_advisor = 1; // Frank Scott
 
 // left advisors
-Q.sender_advisor = 0; // Toni Sender
+Q.jamieson_advisor = 0; // Laura Jamieson
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
 Q.winch_advisor = 0; // Ernest Winch
@@ -556,7 +556,7 @@ Q.connell_advisor = 0; // Robert Connell
 Q.gardiner_advisor = 0; // Robert Gardiner
 
 // Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
+Q.macinnis_advisor = 0; // Angus MacInnis
 Q.woodsworth_advisor = 0; // J.S. Woodsworth
 Q.macphail_advisor = 0; // Agnes Macphail
 Q.wright_advisor = 0; // Percy Wright
@@ -564,7 +564,7 @@ Q.wright_advisor = 0; // Percy Wright
 // Labor advisors
 Q.heaps_advisor = 0; // Albert Heaps
 Q.gillis_advisor = 0; //Clarence Gillis
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
+Q.forsey_advisor = 0; // Eugene Forsey (post-1930)
 Q.noseworthy_advisor = 0; // Joseph Noseworthy
 
 // Revisionist advisors

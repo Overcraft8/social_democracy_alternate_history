@@ -11,9 +11,9 @@ tags: party_affairs, govt_affairs
 
 Our party is wracked as to how to deal with the economic crisis. From the centrist faction, Scott argues that the economic crisis must be allowed to play out, because it is simply a part of the cyclic nature of capitalism.
 
-From labor, the economist Wladimir Woytinsky argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Scott, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Scott, Woytinsky's strategy is opposed to Marxist principles.
+From labor, the economist Eugene Forsey argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Scott, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Scott, Forsey's strategy is opposed to Marxist principles.
 
-The so-called WTB plan, after its chief supporters Woytinsky, Tarnow, and Wright, is receiving more attention within the party.
+The so-called WTB plan, after its chief supporters Forsey, Tarnow, and Wright, is receiving more attention within the party.
 
 However, leftists in the party argue that the WTB plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to socialism.
 
@@ -29,7 +29,7 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 subtitle: Let the depression play itself out.
 on-arrival: center_strength += 5; center_dissent -= 5; labor_dissent += 10; wtb_support -= 1; left_dissent += 10;
 
-Woytinsky and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Woytinsky for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
+Forsey and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Forsey for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
 Our policy course is currently that nothing can be done to alleviate the depression.
 
@@ -90,4 +90,4 @@ With our hard work, we have convinced the majority of the party to adopt the mod
 
 @defer
 
-We hold off on making a decision on economic policy, awaiting more information. Woytinsky and his supporters argue that inaction is a form of action of its own. 
+We hold off on making a decision on economic policy, awaiting more information. Forsey and his supporters argue that inaction is a form of action of its own. 

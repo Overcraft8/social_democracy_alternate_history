@@ -73,14 +73,14 @@ Gardiner has been removed as an advisor. The Centrist faction disapproves.
 # reformists
 
 
-@remove_severing
-title: Remove Severing
-view-if: severing_advisor = 1
+@remove_macinnis
+title: Remove MacInnis
+view-if: macinnis_advisor = 1
 tags: remove_advisor
-on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: macinnis_advisor = 0; reformist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Severing has been removed as an advisor. The Reformist faction disapproves.
+MacInnis has been removed as an advisor. The Reformist faction disapproves.
 
 @remove_woodsworth
 title: Remove Woodsworth
@@ -140,14 +140,14 @@ go-to: rm_main
 Noseworthy has been removed as an advisor. The Labor faction disapproves.
 
 
-@remove_woytinsky
-title: Remove Woytinsky
-view-if: woytinsky_advisor = 1
+@remove_forsey
+title: Remove Forsey
+view-if: forsey_advisor = 1
 tags: remove_advisor
-on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: forsey_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Woytinsky has been removed as an advisor. The Labor faction disapproves.
+Forsey has been removed as an advisor. The Labor faction disapproves.
 
 # left
 
@@ -160,14 +160,14 @@ go-to: rm_main
 
 Levi has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_sender
-title: Remove Sender
-view-if: sender_advisor = 1
+@remove_jamieson
+title: Remove Jamieson
+view-if: jamieson_advisor = 1
 tags: remove_advisor
-on-arrival: sender_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: jamieson_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Sender has been removed as an advisor. The Leftist faction disapproves.
+Jamieson has been removed as an advisor. The Leftist faction disapproves.
 
 @remove_winch
 title: Remove Winch
@@ -187,14 +187,14 @@ go-to: rm_main
 
 Irvine has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_siemsen
-title: Remove Siemsen
-view-if: siemsen_advisor = 1
+@remove_nielsen
+title: Remove Nielsen
+view-if: nielsen_advisor = 1
 tags: remove_advisor
-on-arrival: siemsen_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: nielsen_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Siemsen has been removed as an advisor. The Leftist faction disapproves.
+Nielsen has been removed as an advisor. The Leftist faction disapproves.
 
 
 
@@ -380,17 +380,17 @@ Robert Gardiner is now an advisor.
 # reformist
 
 
-@add_severing
-title: Carl Severing
-subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+@add_macinnis
+title: Angus MacInnis
+subtitle: Angus MacInnis is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
 is-card: true
-card-image: img/portraits/SeveringCarl.jpg
+card-image: img/portraits/MacInnisAngus.jpg
 tags: reformist_advisor
-view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
+view-if: macinnis_advisor = 0 and n_advisors < 3
+on-arrival: macinnis_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
-Carl Severing is now an advisor.
+Angus MacInnis is now an advisor.
 
 @add_woodsworth
 title: J.S. Woodsworth
@@ -444,17 +444,17 @@ tags: left_advisor
 
 Paul Levi is now an advisor.
 
-@add_sender
-title: Toni Sender
-subtitle: Toni Sender is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, Against Toleration, Addressing the Economic Crisis ?]
+@add_jamieson
+title: Laura Jamieson
+subtitle: Laura Jamieson is an anti-war and womens' rights advocate, and Reichstag member. {!<br><br>!}[? if difficulty < 0 : Actions - Left-Center Unity, Organizing Women, Against Toleration, Addressing the Economic Crisis ?]
 is-card: true
-card-image: img/portraits/SenderToni.jpg
-view-if: sender_advisor = 0 and n_advisors < 3
-on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/JamiesonLaura.jpg
+view-if: jamieson_advisor = 0 and n_advisors < 3
+on-arrival: jamieson_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Toni Sender is now an advisor.
+Laura Jamieson is now an advisor.
 
 @add_winch
 title: Ernest Winch
@@ -480,17 +480,17 @@ tags: left_advisor
 
 William Irvine is now an advisor.
 
-@add_siemsen
-title: Anna Siemsen
-subtitle: Anna Siemsen is an and educational reform advocate and pacifist, who was one of the few German women to receive a PhD in the pre-war period. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Pacifism, Educational Curriculum, Educational Structure ?]
+@add_nielsen
+title: Dorise Nielsen
+subtitle: Dorise Nielsen is an and educational reform advocate and pacifist, who was one of the few German women to receive a PhD in the pre-war period. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Pacifism, Educational Curriculum, Educational Structure ?]
 is-card: true
-card-image: img/portraits/SiemsenAnna.jpg
-view-if: siemsen_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: siemsen_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/NielsenDorise.jpg
+view-if: nielsen_advisor = 0 and n_advisors < 3 and left_split = 0
+on-arrival: nielsen_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Anna Siemsen is now an advisor.
+Dorise Nielsen is now an advisor.
 
 
 
@@ -533,17 +533,17 @@ go-to: advisor_menu
 Joseph Noseworthy is now an advisor.
 
 
-@add_woytinsky
-title: Wladimir Woytinsky
-subtitle: Wladimir Woytinsky is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
+@add_forsey
+title: Eugene Forsey
+subtitle: Eugene Forsey is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
 is-card: true
-card-image: img/portraits/WoytinskyWladimir.jpg
+card-image: img/portraits/ForseyEugene.jpg
 tags: labor_advisor
-view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
+view-if: forsey_advisor = 0 and n_advisors < 3 and unions_independent = 0
+on-arrival: forsey_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-Wladimir Woytinsky is now an advisor.
+Eugene Forsey is now an advisor.
 
 
 # neorevisionist leaders
