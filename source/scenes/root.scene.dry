@@ -333,10 +333,10 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.Monarch = "George V";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Rb. Bennett";
-Q.chancellor_party = 'RPC';
+Q.king = "George V";
+// starting chancellor: RB. Bennett
+Q.chancellor = "RB. Bennett";
+Q.chancellor_party = 'CPC';
 Q.ccf_in_government = 0;
 Q.rpc_in_government = 1;
 Q.lpc_in_government = 0;
