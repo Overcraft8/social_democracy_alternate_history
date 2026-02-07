@@ -1,6 +1,6 @@
 body {
   --bg-color: #f3f3e3;
-  --border-color: #000;
+  --border-color: #961E1E;
   --content-bg-color: #f3f3f3;
   --text-color: #431;
   --link-color: #900;
@@ -19,7 +19,7 @@ body {
   overflow-y: scroll;
 }
 body.dark-mode {
-  --bg-color: #000;
+  --bg-color: #961E1E;
   --border-color: #fff;
   --content-bg-color: #242424;
   --text-color: #efefef;
@@ -538,7 +538,7 @@ table {
 
 /* Styles for parties */
 .seat.pcc {
-    fill: #8B0000;
+    fill: #A00000;
 }
 .seat.ccf {
     fill: #FFBB33;
