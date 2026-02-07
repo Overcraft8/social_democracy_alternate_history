@@ -375,18 +375,18 @@ go-to: popular_front_success
 
 @great_popular_front
 view-if: rpc_party_leader == "Joos" and pcc_party_leader == "Conciliators"
-on-arrival: ccf_in_government = 1; in_popular_front = 1; chancellor = "Breitscheid"; chancellor_party = "CCF"; pcc_relation += 10; coup_progress += 2; in_left_front = 0; in_weimar_coalition = 0; in_grand_coalition = 0; coalition_dissent = 0;
+on-arrival: ccf_in_government = 1; in_popular_front = 1; chancellor = "Gardiner"; chancellor_party = "CCF"; pcc_relation += 10; coup_progress += 2; in_left_front = 0; in_weimar_coalition = 0; in_grand_coalition = 0; coalition_dissent = 0;
 achievement: grosse_volksfront
 go-to: popular_front_civil_war if coup_progress >= 10; popular_front_no_civil_war if coup_progress < 10
 
-Somehow, the coalition is successfully formed! The conciliatory leadership of the Center Party and PCC helped make the negotiations possible. We still need a chancellor; the only acceptable choice among the parties was Rudolf Breitscheid of the CCF, acceptable to the Center and PCC [? if president == "Hindenburg" : as well as President Hindenburg, albeit extremely reluctantly ?].
+Somehow, the coalition is successfully formed! The conciliatory leadership of the Center Party and PCC helped make the negotiations possible. We still need a chancellor; the only acceptable choice among the parties was Robert Gardiner of the CCF, acceptable to the Center and PCC [? if president == "Hindenburg" : as well as President Hindenburg, albeit extremely reluctantly ?].
 
 @popular_front_success
-on-arrival: ccf_in_government = 1; in_popular_front = 1; chancellor = "Breitscheid"; chancellor_party = "CCF"; pcc_relation += 10; coup_progress += 2; in_left_front = 0; in_weimar_coalition = 0; in_grand_coalition = 0; coalition_dissent = 0;
+on-arrival: ccf_in_government = 1; in_popular_front = 1; chancellor = "Gardiner"; chancellor_party = "CCF"; pcc_relation += 10; coup_progress += 2; in_left_front = 0; in_weimar_coalition = 0; in_grand_coalition = 0; coalition_dissent = 0;
 go-to: popular_front_civil_war if coup_progress >= 10; popular_front_no_civil_war if coup_progress < 10
 achievement: volksfront
 
-Somehow, surprisingly, the coalition is successfully formed! We still need a chancellor; the only acceptable choice among the parties was Rudolf Breitscheid of the CCF, acceptable to the Center and PCC [? if president == "Hindenburg" : as well as President Hindenburg, albeit extremely reluctantly ?].
+Somehow, surprisingly, the coalition is successfully formed! We still need a chancellor; the only acceptable choice among the parties was Robert Gardiner of the CCF, acceptable to the Center and PCC [? if president == "Hindenburg" : as well as President Hindenburg, albeit extremely reluctantly ?].
 
 @popular_front_no_civil_war
 on-arrival: pcc_goals_seen = 0; finance_minister_party = "RPC"; interior_minister_party = "RPC"; economic_minister_party = "RPC"; labor_minister_party = "RPC"; foreign_minister_party = "RPC"; agriculture_minister_party = "RPC"; reichswehr_minister = "I"; leverage = ccf_r + pcc_r;
@@ -507,11 +507,11 @@ go-to: left_coalition_success
 
 
 @left_coalition_success
-on-arrival: ccf_in_government = 1; in_left_front = 1; chancellor = "Breitscheid"; chancellor_party = "CCF"; coup_progress += 3; capital_strike_progress += 2; in_popular_front = 0; in_grand_coalition = 0; in_weimar_coalition = 0; pcc_relation += 10
+on-arrival: ccf_in_government = 1; in_left_front = 1; chancellor = "Gardiner"; chancellor_party = "CCF"; coup_progress += 3; capital_strike_progress += 2; in_popular_front = 0; in_grand_coalition = 0; in_weimar_coalition = 0; pcc_relation += 10
 go-to: left_coalition_civil_war if coup_progress >= 10; left_coalition_no_civil_war if coup_progress < 10
 achievement: einheitsfront
 
-Somehow, surprisingly, the left coalition is successfully formed, without appointing Thälmann as chancellor. The consensus choice for chancellor, accepted by the CCF, PCC, and President [+ president +], is Rudolf Breitscheid, who belongs to the centrist faction of the CCF, but was acceptable to the left due to his previous membership in the left-wing anti-war UCCF.
+Somehow, surprisingly, the left coalition is successfully formed, without appointing Thälmann as chancellor. The consensus choice for chancellor, accepted by the CCF, PCC, and President [+ president +], is Robert Gardiner, who belongs to the centrist faction of the CCF, but was acceptable to the left due to his previous membership in the left-wing anti-war UCCF.
 
 # just raise the coup limit, don't immediately go to civil war
 
@@ -733,7 +733,7 @@ There is no path to a majority government for now. The scheming around President
 title: CCF majority alone
 subtitle: CCF: [+ ccf_r +]%
 view-if: ccf_r >= 50
-on-arrival: chancellor = "Empty"; chancellor_party = "CCF"; ccf_in_government = 1; in_ccf_majority = 1; pro_republic += 5; foreign_minister_party = "CCF"; foreign_minister = "Breitscheid"; interior_minister_party = "CCF"; interior_minister = "Severing"; justice_minister_party = "CCF"; justice_minister = "Radbruch"; labor_minister_party = "CCF"; labor_minister = "Wissell"; reichswehr_minister_party = "CCF"; reichswehr_minister = "Leber"; economic_minister_party = "CCF"; economic_minister = "Schmidt"; finance_minister_party = "CCF"; finance_minister = "Scott"; agriculture_minister_party = "CCF"; agriculture_minister = "Wright"; reichswehr_loyalty -= 0.05; 
+on-arrival: chancellor = "Empty"; chancellor_party = "CCF"; ccf_in_government = 1; in_ccf_majority = 1; pro_republic += 5; foreign_minister_party = "CCF"; foreign_minister = "Gardiner"; interior_minister_party = "CCF"; interior_minister = "Severing"; justice_minister_party = "CCF"; justice_minister = "Underhill"; labor_minister_party = "CCF"; labor_minister = "Noseworthy"; reichswehr_minister_party = "CCF"; reichswehr_minister = "Leber"; economic_minister_party = "CCF"; economic_minister = "Schmidt"; finance_minister_party = "CCF"; finance_minister = "Scott"; agriculture_minister_party = "CCF"; agriculture_minister = "Wright"; reichswehr_loyalty -= 0.05; 
 achievement: majority_party
 
 Finally, the CCF can govern alone! Our long campaign of electioneering has paid off. We do not need to worry about coalition government; anything is possible. 
@@ -741,7 +741,7 @@ Finally, the CCF can govern alone! Our long campaign of electioneering has paid 
 Who should be chancellor?
 
 - @woodsworth_majority_chancellor: J.S. Woodsworth for Chancellor.
-- @breitscheid_majority_chancellor: Rudolf Breitscheid for Chancellor.
+- @gardiner_majority_chancellor: Robert Gardiner for Chancellor.
 - @muller_majority_chancellor: Hermann Müller for Chancellor.
 - @Coldwell_majority_chancellor: Otto Coldwell for Chancellor.
 
@@ -752,10 +752,10 @@ on-arrival: chancellor = "Woodsworth"
 [? if president == "Woodsworth": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Reichstag; there is no law saying that the Chancellor must be a member of the Reichstag). Thus, we have Chancellor-President J.S. Woodsworth. ?]
 [? if president != "Woodsworth": J.S. Woodsworth has become chancellor of the CCF majority. ?]
 
-@breitscheid_majority_chancellor
-on-arrival: chancellor = "Breitscheid"
+@gardiner_majority_chancellor
+on-arrival: chancellor = "Gardiner"
 
-Rudolf Breitscheid has become chancellor of the CCF majority.
+Robert Gardiner has become chancellor of the CCF majority.
 
 @muller_majority_chancellor
 view-if: muller_dead = 0
@@ -796,7 +796,7 @@ on-arrival: sa_strength += 100; sh_strength += 100; in_emergency_government = 1
 Yes, an emergency minority government, with the support of the CCF. Who should lead this emergency minority government?
 
 - @woodsworth_emergency_chancellor: J.S. Woodsworth for Chancellor-President!
-- @breitscheid_emergency_chancellor: Rudolf Breitscheid for emergency Chancellor.
+- @gardiner_emergency_chancellor: Robert Gardiner for emergency Chancellor.
 - @bruning_emergency_chancellor: Brüning of the Center Party, as a goodwill gesture toward the bourgeoisie.
 - @wirth_emergency_chancellor: Joseph Wirth of the Center Party, as a gesture of republican unity.
 
@@ -812,11 +812,11 @@ Thus, we have Chancellor-President J.S. Woodsworth. He claims that he will resig
 - @far_right_coup
 - @emergency_no_confidence: The Nazis immediately call a no-confidence vote against us...
 
-@breitscheid_emergency_chancellor
+@gardiner_emergency_chancellor
 subtitle: The Communists are warming to him...
-on-arrival: chancellor = "Breitscheid"; chancellor_party = "CCF"; ccf_in_government = 1; pcc_relation += 5; foreign_minister_party = "CCF"; interior_minister_party = "CCF"; justice_minister_party = "CCF"; labor_minister_party = "CCF"; reichswehr_minister_party = "CCF"; economic_minister_party = "CCF"; finance_minister_party = "CCF"; agriculture_minister_party = "CCF"; reichswehr_loyalty -= 0.1;
+on-arrival: chancellor = "Gardiner"; chancellor_party = "CCF"; ccf_in_government = 1; pcc_relation += 5; foreign_minister_party = "CCF"; interior_minister_party = "CCF"; justice_minister_party = "CCF"; labor_minister_party = "CCF"; reichswehr_minister_party = "CCF"; economic_minister_party = "CCF"; finance_minister_party = "CCF"; agriculture_minister_party = "CCF"; reichswehr_loyalty -= 0.1;
 
-We have appointed Rudolf Breitscheid as emergency chancellor. The Communists consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
+We have appointed Robert Gardiner as emergency chancellor. The Communists consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
 
 - @far_right_coup
 - @emergency_no_confidence
@@ -931,19 +931,19 @@ Who should be the chancellor?
 
 - @muller
 - @woodsworth
-- @breitscheid_coalition_chancellor
+- @gardiner_coalition_chancellor
 - @Coldwell
 - @rpc_chancellor
 - @rpc_chancellor_wirth
 
-@breitscheid_coalition_chancellor
-title: Rudolf Breitscheid for Chancellor
-subtitle: Breitscheid is viewed as friendlier towards the left of the CCF.
+@gardiner_coalition_chancellor
+title: Robert Gardiner for Chancellor
+subtitle: Gardiner is viewed as friendlier towards the left of the CCF.
 view-if: year >= 1930
-on-arrival: chancellor = "Breitscheid"; chancellor_party = "CCF";
+on-arrival: chancellor = "Gardiner"; chancellor_party = "CCF";
 go-to: ministries
 
-Rudolf Breitscheid has been appointed chancellor.
+Robert Gardiner has been appointed chancellor.
 
 
 @grand_coalition
@@ -1251,10 +1251,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
 view-if: labor_minister_party != "CCF"
-on-arrival: leverage -= 5; labor_minister_party = "CCF"; labor_minister = "Wissell"
+on-arrival: leverage -= 5; labor_minister_party = "CCF"; labor_minister = "Noseworthy"
 go-to: ministries
 
-Rudolf Wissell of the CCF has been appointed labor minister.
+Joseph Noseworthy of the CCF has been appointed labor minister.
 
 @interior
 title: Interior Ministry
@@ -1299,10 +1299,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: justice_minister_party != "CCF"
-on-arrival: leverage -= 10; justice_minister_party = "CCF"; justice_minister = "Radbruch"
+on-arrival: leverage -= 10; justice_minister_party = "CCF"; justice_minister = "Underhill"
 go-to: ministries
 
-Gustav Radbruch of the CCF has been appointed Justice Minister.
+Frank Underhill of the CCF has been appointed Justice Minister.
 
 @foreign
 title: Foreign Ministry
@@ -1311,10 +1311,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: foreign_minister_party != "CCF"
-on-arrival: leverage -= 10; foreign_minister_party = "CCF"; foreign_minister = "Breitscheid"
+on-arrival: leverage -= 10; foreign_minister_party = "CCF"; foreign_minister = "Gardiner"
 go-to: ministries
 
-Rudolf Breitscheid of the CCF has been appointed Foreign Minister.
+Robert Gardiner of the CCF has been appointed Foreign Minister.
 
 
 @agriculture

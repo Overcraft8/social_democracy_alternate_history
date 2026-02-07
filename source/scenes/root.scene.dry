@@ -548,24 +548,24 @@ Q.scott_advisor = 1; // Frank Scott
 Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitz_advisor = 0; // Max Seydewitz
+Q.winch_advisor = 0; // Ernest Winch
+Q.irvine_advisor = 0; // William Irvine
 
 // centrist alternate advisors
-Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.breitscheid_advisor = 0; // Rudolf Breitscheid
+Q.connell_advisor = 0; // Robert Connell
+Q.gardiner_advisor = 0; // Robert Gardiner
 
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.woodsworth_advisor = 0; // J.S. Woodsworth
-Q.juchacz_advisor = 0; // Marie Juchacz
+Q.macphail_advisor = 0; // Agnes Macphail
 Q.wright_advisor = 0; // Percy Wright
 
 // Labor advisors
-Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
+Q.heaps_advisor = 0; // Albert Heaps
+Q.gillis_advisor = 0; //Clarence Gillis
 Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
-Q.wissell_advisor = 0; // Rudolf Wissell
+Q.noseworthy_advisor = 0; // Joseph Noseworthy
 
 // Revisionist advisors
 Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
@@ -575,7 +575,7 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
-Q.radbruch_advisor = 0; // Gustav Radbruch
+Q.underhill_advisor = 0; // Frank Underhill
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
 set-bg: img/vintage-map-of-canada-1930s-2FMG1KK.jpg

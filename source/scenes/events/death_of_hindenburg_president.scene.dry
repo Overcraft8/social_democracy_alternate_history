@@ -38,7 +38,7 @@ Barring that, the Center and [+ lpc_name +] are planning to run separate candida
 As for the CCF, we could support a joint Weimar Coalition candidate or run our own.
 [? if woodsworth_campaign : J.S. Woodsworth is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if woodsworth_campaign = 0 and not ccf_prussia: J.S. Woodsworth is tired. After being deposed in Prussia, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if woodsworth_campaign = 0 and ccf_prussia : J.S. Woodsworth is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
 Kurt Schumacher is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
-[? if womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0: Or, perhaps it is time for a woman to become president. Germany and the CCF have been leading on women's rights for years, and it is only fitting that we should elect the world's first female president. Perhaps Marie Juchacz could be seen as the "mother of the nation" for her work in social welfare. However, her divorce 28 years ago might make it difficult for the Catholics to support her. ?]
+[? if womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0: Or, perhaps it is time for a woman to become president. Germany and the CCF have been leading on women's rights for years, and it is only fitting that we should elect the world's first female president. Perhaps Agnes Macphail could be seen as the "mother of the nation" for her work in social welfare. However, her divorce 28 years ago might make it difficult for the Catholics to support her. ?]
 
 [? if presidential_powers >= 1 and pro_republic >= 60 and pacifism >= 3: Since Germany has been largely democratized and presidential powers reduced, we can also support another non-traditional political figure, someone from the cultural, scientific, or literary spheres. They will perhaps be the symbol of a new Germany that has moved beyond its past. ?]
 # if J.S. Woodsworth ran last time: he can only run if he controls Prussia. Otherwise, it's Kurt Schumacher.
@@ -46,7 +46,7 @@ Kurt Schumacher is an ambitious rising star in the party, and would be all too w
 # options: 
 # - J.S. Woodsworth (only if ccf_prussia)
 # - Kurt Schumacher
-# - Marie Juchacz (The mother of the nation, only available if women's rights is full)
+# - Agnes Macphail (The mother of the nation, only available if women's rights is full)
 
 @candidate_menu
 
@@ -57,7 +57,7 @@ Kurt Schumacher is an ambitious rising star in the party, and would be all too w
 - @munzenberg_r1: Support Willi Münzenberg of the PCC.
 - @woodsworth_r1: Support J.S. Woodsworth.
 - @schumacher_r1: Support Kurt Schumacher.
-- @juchacz_r1: Support Marie Juchacz.
+- @macphail_r1: Support Agnes Macphail.
 - @cultural_figure: Support a nonpartisan cultural figure?
 
 @eckener_r1
@@ -134,15 +134,15 @@ go-to: r1_menu
 We have nominated Kurt Schumacher to be our presidential candidate.
 
 
-@juchacz_r1
+@macphail_r1
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 view-if: womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0
 choose-if: resources >= 2
-on-arrival: ccf_candidate = "Juchacz"; resources -= 2; is_unity_candidate = 0
+on-arrival: ccf_candidate = "Macphail"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Marie Juchacz as our presidential candidate, the first woman ever to be nominated for this position!
+We have nominated Agnes Macphail as our presidential candidate, the first woman ever to be nominated for this position!
 
 @cultural_figure
 view-if: presidential_powers >= 1 and pro_republic >= 60 and pacifism >= 3
@@ -231,10 +231,10 @@ We implore the Center Party to support [+ ccf_candidate +] as a unity candidate 
 title: Convince the Center Party to support [+ ccf_candidate +].
 choose-if: ccf_votes >= z_votes
 unavailable-subtitle: [? if ccf_votes < z_votes: The Center knows that they are more popular than us; they do not see a reason to support our candidate. ?]
-view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Juchacz" or is_cultural_candidate) and z_candidate != ccf_candidate
+view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Macphail" or is_cultural_candidate) and z_candidate != ccf_candidate
 on-arrival: {!
 Q.z_support_woodsworth = 0;
-if (Q.ccf_candidate == "Juchacz") {
+if (Q.ccf_candidate == "Macphail") {
     if (Q.z_relation >= 60 || (Q.z_relation > 40 && Q.z_party_leader == "Joos")) {
         Q.z_support_woodsworth = 1;
     } else if (Q.z_relation <= 40) {
@@ -260,7 +260,7 @@ We implore the Center Party to support [+ ccf_candidate +]. We attempt to convin
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-Unfortunately, the Center Party is not convinced. [? if ccf_candidate = "Juchacz" : The Catholics are not impressed with Marie Juchacz. This is in part because she is a woman, in part because she had a divorce. ?]
+Unfortunately, the Center Party is not convinced. [? if ccf_candidate = "Macphail" : The Catholics are not impressed with Agnes Macphail. This is in part because she is a woman, in part because she had a divorce. ?]
 
 @z_success
 on-arrival: z_candidate = ccf_candidate; Seldte_bonus += 2.5 if z_relation < 40
@@ -302,7 +302,7 @@ max-visits: 1
 
 @convince_lpc_ccf
 title: Convince the [+ lpc_name +] to support [+ ccf_candidate +].
-view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Juchacz"or is_cultural_candidate) and lpc_candidate != ccf_candidate
+view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Macphail"or is_cultural_candidate) and lpc_candidate != ccf_candidate
 on-arrival: lpc_candidate = ccf_candidate if lpc_relation >= 40
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
@@ -312,7 +312,7 @@ max-visits: 1
 
 @convince_pcc_ccf
 title: Convince the PCC to support [+ ccf_candidate +].
-view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Juchacz" or is_cultural_candidate) and pcc_candidate != ccf_candidate
+view-if: (ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Macphail" or is_cultural_candidate) and pcc_candidate != ccf_candidate
 choose-if: ccf_votes >= pcc_votes
 unavailable-subtitle: The PCC knows that they are more popular than us; they do not see a reason to support our candidate.
 max-visits: 1
@@ -346,8 +346,8 @@ The PCC now endorses [+ ccf_candidate +] in the presidential election! We ask th
 @convince_cpc_ccf
 title: Convince the CPC to support [+ ccf_candidate +].
 unavailable-subtitle: The CPC is not willing to support our candidate.
-view-if: ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Juchacz" or is_cultural_candidate
-choose-if: (cpc_relation >= 50 and candidate != "Juchacz") or (cpc_relation >= 60 and candidate = "Juchacz")
+view-if: ccf_candidate = "Woodsworth" or ccf_candidate = "Schumacher" or ccf_candidate = "Macphail" or is_cultural_candidate
+choose-if: (cpc_relation >= 50 and candidate != "Macphail") or (cpc_relation >= 60 and candidate = "Macphail")
 on-arrival: cpc_candidate = ccf_candidate
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
@@ -385,7 +385,7 @@ Thalmann: "Ernst Thälmann of the PCC",
 Munzenberg: "Willi Münzenberg of the PCC",
 Woodsworth: "J.S. Woodsworth of the CCF",
 Schumacher: "Kurt Schumacher of the CCF",
-Juchacz: "Marie Juchacz of the CCF",
+Macphail: "Agnes Macphail of the CCF",
 Einstein: "Albert Einstein, scientist",
 Mann: "Heinrich Mann, writer",
 Ossietzky: "Carl von Ossietzky, journalist"
@@ -453,7 +453,7 @@ Election results:
 
 [? if Woodsworth_running : Woodsworth - [+ Woodsworth_votes_disp +]% ?]
 [? if Schumacher_running : Schumacher - [+ Schumacher_votes_disp +]% ?]
-[? if Juchacz_running : Juchacz - [+ Juchacz_votes_disp +]% ?]
+[? if Macphail_running : Macphail - [+ Macphail_votes_disp +]% ?]
 # cultural candidates
 [? if Einstein_running : Einstein - [+ Einstein_votes_disp +]% ?]
 [? if Ossietzky_running : Ossietzky - [+ Ossietzky_votes_disp +]% ?]
@@ -543,10 +543,10 @@ view-if: ccf_candidate != "Thälmann" and pcc_candidate = "Thälmann"
 choose-if: pcc_relation >= 50 and left_strength > reformist_strength
 unavailable-subtitle: [? if pcc_relation < 50 : We do not have good enough relations with the Communists, so they are not even willing to accept our support. ?] [? if reformist_strength >= left_strength : The reformist faction is able to dissuade the party from supporting this bizarre arrangement. ?]
 on-arrival: reformist_dissent += 15; center_dissent += 10; labor_dissent += 5; neorevisionist_dissent += 10; catholics_ccf -= 5; workers_ccf -= 3; pcc_relation += 10; communist_coalition += 2; z_relation -= 15; cpc_relation -= 15; lpc_relation -= 12
-on-departure: z_candidate = "Adenauer" if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Juchacz"; lpc_candidate = z_candidate if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Juchacz"; cpc_candidate = z_candidate if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Juchacz"; ccf_candidate = "Thälmann"; 
+on-departure: z_candidate = "Adenauer" if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Macphail"; lpc_candidate = z_candidate if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Macphail"; cpc_candidate = z_candidate if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Macphail"; ccf_candidate = "Thälmann"; 
 max-visits: 1
 
-We have switched our endorsement to Ernst Thälmann of the PCC. [? if z_candidate = ccf_candidate : Our former allies in the Center Party see this as a betrayal. ?][? if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Juchacz": Now, they will support Konrad Adenauer once again. ?][? if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Juchacz": The [+ lpc_name +] will switch their support to the Center Party candidate. ?][? if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Juchacz": The CPC will also support the Center Party candidate. ?]
+We have switched our endorsement to Ernst Thälmann of the PCC. [? if z_candidate = ccf_candidate : Our former allies in the Center Party see this as a betrayal. ?][? if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Macphail": Now, they will support Konrad Adenauer once again. ?][? if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Macphail": The [+ lpc_name +] will switch their support to the Center Party candidate. ?][? if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Macphail": The CPC will also support the Center Party candidate. ?]
 
 - @r2_vote: Let the voting begin.
 
@@ -557,10 +557,10 @@ view-if: ccf_candidate != "Münzenberg" and pcc_candidate = "Münzenberg"
 choose-if: pcc_relation >= 50 and left_strength > reformist_strength
 unavailable-subtitle: [? if pcc_relation < 50 : We do not have good enough relations with the Communists, so they are not even willing to accept our support. ?] [? if reformist_strength >= left_strength : The reformist faction is able to dissuade the party from supporting this bizarre arrangement. ?]
 on-arrival: reformist_dissent += 12; center_dissent += 10; labor_dissent += 5; neorevisionist_dissent += 10; catholics_ccf -= 5; workers_ccf -= 3; pcc_relation += 10; communist_coalition += 2; z_relation -= 12; lpc_relation -= 10; cpc_relation -= 15; 
-on-departure: z_candidate = "Adenauer" if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Juchacz"; lpc_candidate = z_candidate if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Juchacz"; cpc_candidate = z_candidate if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Juchacz"; ccf_candidate = "Münzenberg"; 
+on-departure: z_candidate = "Adenauer" if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Macphail"; lpc_candidate = z_candidate if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Macphail"; cpc_candidate = z_candidate if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Macphail"; ccf_candidate = "Münzenberg"; 
 max-visits: 1
 
-We have switched our endorsement to Willi Münzenberg of the PCC. [? if z_candidate = ccf_candidate : Our former allies in the Center Party see this as a betrayal. ?][? if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Juchacz": Now, they will support Konrad Adenauer once again. ?][? if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Juchacz": The [+ lpc_name +] will switch their support to the Center Party candidate. ?][? if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Juchacz": The CPC will also support the Center Party candidate. ?]
+We have switched our endorsement to Willi Münzenberg of the PCC. [? if z_candidate = ccf_candidate : Our former allies in the Center Party see this as a betrayal. ?][? if z_candidate = "Woodsworth" or z_candidate = "Schumacher" or z_candidate = "Macphail": Now, they will support Konrad Adenauer once again. ?][? if lpc_candidate = "Woodsworth" or lpc_candidate = "Schumacher" or lpc_candidate = "Macphail": The [+ lpc_name +] will switch their support to the Center Party candidate. ?][? if cpc_candidate = "Woodsworth" or cpc_candidate = "Schumacher" or cpc_candidate = "Macphail": The CPC will also support the Center Party candidate. ?]
 
 - @r2_vote: Let the voting begin.
 
@@ -685,7 +685,7 @@ Despite the Nazi threats, supporters of the CCF and the democratic parties refus
 
 
 @election_end
-go-to: eckener_win if winner = "Eckener"; juchacz_win if winner = "Juchacz"; bundesrepublik_win if winner = "Schumacher" or winner = "Adenauer"; hitler_victory if winner = "Hitler" or winner = "Göring" or winner = "Goring"; seldte_victory if winner = "Seldte"; munzenberg_victory if winner = "Munzenberg" or winner = "Münzenberg"; thalmann_victory if winner = "Thalmann" or winner = "Thälmann"; nazis_lose if winner = "Woodsworth" or winner = "Gessler"; cultural_victory if winner = "Ossietzky" or winner = "Mann"; einstein_victory if winner = "Einstein"
+go-to: eckener_win if winner = "Eckener"; macphail_win if winner = "Macphail"; bundesrepublik_win if winner = "Schumacher" or winner = "Adenauer"; hitler_victory if winner = "Hitler" or winner = "Göring" or winner = "Goring"; seldte_victory if winner = "Seldte"; munzenberg_victory if winner = "Munzenberg" or winner = "Münzenberg"; thalmann_victory if winner = "Thalmann" or winner = "Thälmann"; nazis_lose if winner = "Woodsworth" or winner = "Gessler"; cultural_victory if winner = "Ossietzky" or winner = "Mann"; einstein_victory if winner = "Einstein"
 on-arrival: president = winner; president = "Thälmann" if president == "Thalmann"; president = "Münzenberg" if president = "Munzenberg"; president = "Göring" if president = "Goring"
 
 The election has been won by [+ winner_desc +].
@@ -718,11 +718,11 @@ achievement: zeppelin_kapitan
 go-to: nazis_lose
 
 
-@juchacz_win
+@macphail_win
 achievement: wahlrechts
 go-to: nazis_lose
 
-This is a historic victory - Marie Juchacz is the first woman to be elected president in any republic, anywhere in the world.
+This is a historic victory - Agnes Macphail is the first woman to be elected president in any republic, anywhere in the world.
 
 @einstein_victory
 achievement: republik_der_wissenschaft

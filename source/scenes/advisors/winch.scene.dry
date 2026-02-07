@@ -1,13 +1,13 @@
-title: Kurt Rosenfeld
+title: Ernest Winch
 is-pinned-card: true
 tags: advisor, left
-card-image: img/portraits/RosenfeldKurt.jpg
-view-if: rosenfeld_advisor = 1
+card-image: img/portraits/WinchErnest.jpg
+view-if: winch_advisor = 1
 new-page: true 
 
-= Kurt Rosenfeld
+= Ernest Winch
 
-Rosenfeld works as a lawyer in Berlin who defends left-wing individuals and causes. He favors cooperation with the PCC and a path of class struggle for the CCF.
+Winch works as a lawyer in Berlin who defends left-wing individuals and causes. He favors cooperation with the PCC and a path of class struggle for the CCF.
 
 - @building_the_left
 - @pcc_cooperation
@@ -30,7 +30,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 5; pcc_relation += 4*(1-dissent); reformist_dissent += 2; communist_coalition += 1 if pcc_cooperation_seen <= 1; pcc_cooperation_seen += 1
 
-Through his work, Rosenfeld has defended individual PCC members; this should make some connections possible.
+Through his work, Winch has defended individual PCC members; this should make some connections possible.
 
 @against_toleration
 title: Against toleration

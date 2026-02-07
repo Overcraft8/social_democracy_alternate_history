@@ -204,13 +204,13 @@ go-to: eg_menu
 
 Kurt Schumacher has been elected as President of Germany. As a young and ambitious CCF member, he will be shaping Germany for years to come.
 
-@president_juchacz
-title: Marie Juchacz is President
-view-if: president == "Juchacz"
+@president_macphail
+title: Agnes Macphail is President
+view-if: president == "Macphail"
 tags: endings
 go-to: eg_menu
 
-Marie Juchacz has been elected as President of Germany. She is the first woman to be elected as the head of state of any republic, and will contribute to shaping Germany for years to come.
+Agnes Macphail has been elected as President of Germany. She is the first woman to be elected as the head of state of any republic, and will contribute to shaping Germany for years to come.
 
 @president_einstein
 title: Albert Einstein is President
@@ -416,7 +416,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_scpeppelin_kapitan : **Zeppelinkapitän** - Hugo Eckener has been elected president. ?]
 
-[? if game_achievement_wahlrechts : **Wahlrechts für Frauen** - Marie Juchacz has been elected president. ?]
+[? if game_achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected president. ?]
 
 [? if game_achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected president, and constitutional reforms have reduced presidential power. ?]
 
@@ -525,7 +525,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_scpeppelin_kapitan : **Zeppelinkapitän** - Hugo Eckener has been elected president. ?]
 
-[? if achievement_wahlrechts : **Wahlrechts für Frauen** - Marie Juchacz has been elected president. ?]
+[? if achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected president. ?]
 
 [? if achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected president, and constitutional reforms have reduced presidential power. ?]
 
@@ -632,7 +632,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_scpeppelin_kapitan : **Zeppelinkapitän** - Hugo Eckener has been elected president. ?]
 
-[? if not achievement_wahlrechts : **Wahlrechts für Frauen** - Marie Juchacz has been elected president. ?]
+[? if not achievement_wahlrechts : **Wahlrechts für Frauen** - Agnes Macphail has been elected president. ?]
 
 [? if not achievement_bundesrepublik : **Bundesrepublik** - Konrad Adenauer or Kurt Schumacher has been elected president, and constitutional reforms have reduced presidential power. ?]
 
