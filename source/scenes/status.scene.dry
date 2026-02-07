@@ -31,19 +31,19 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+King: [+ king +]
 
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">CCF</span>!}: [+ ccf_r +]%
+{!<span class="tooltip-text" title="Social Democratic Party of Canada">CCF</span>!}: [+ ccf_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">RPC + BVP</span>!}: [+ rpc_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">PCC</span>!}: [+ pcc_r +]%
+{!<span class="tooltip-text" title="Communist Party of Canada">PCC</span>!}: [+ pcc_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not lpc_name: LPC?][? if lpc_name != 0 : [+ lpc_name +]?]{!</span>!}: [+ lpc_r +]%
 # 1928: 9, 1930: 5
@@ -82,7 +82,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German People's Party">CPC</span>!}: [+ cpc_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">PCC</span>!}: [+ pcc_relation : relationships +]
+{!<span class="tooltip-text" title="Communist Party of Canada">PCC</span>!}: [+ pcc_relation : relationships +]
 
 {!<span class="tooltip-text" title="German National People's Party">SCP</span>!}: [+ scp_relation : relationships +]
 

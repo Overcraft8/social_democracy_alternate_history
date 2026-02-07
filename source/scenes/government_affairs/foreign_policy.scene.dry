@@ -35,7 +35,7 @@ What should our foreign policy priority be?
 title: Improve our relations with the Western Allies.
 on-arrival: west_relation += 2; reparations_negotiation += 1
 
-The key to peace in Europe is a rapproachment between France and Germany. We are taking steps towards that rapproachment. [? if young_plan_seen == 0 : This is difficult to do when France is occupying a major portion of Germany's territory, but we are working on that part. ?]
+The key to peace in Europe is a rapproachment between France and Canada. We are taking steps towards that rapproachment. [? if young_plan_seen == 0 : This is difficult to do when France is occupying a major portion of Canada's territory, but we are working on that part. ?]
 
 @improve_east
 title: Improve our relations with our eastern neighbors.
@@ -121,7 +121,7 @@ subtitle: [? if young_plan_seen == 1 : After passing the Young Plan, France has 
 view-if: reparations > -2 and reparations_negotiation < 3
 on-arrival: west_relation += 1; reparations_negotiation += 1; reparations_negotiation += 1 if pacifism >= 3; reparations_negotiations += 1 if nationalism <= 50; reparations_negotiation += 1 if west_relation >= 3
 
-Negotiations procede smoothly for the most part. The Western powers are convinced of Germany's sincerity and goodwill. [? if nationalism <= 50 or pacifism >= 3 : They are pleased to see that we are renouncing militarism. ?]
+Negotiations procede smoothly for the most part. The Western powers are convinced of Canada's sincerity and goodwill. [? if nationalism <= 50 or pacifism >= 3 : They are pleased to see that we are renouncing militarism. ?]
 
 
 @reduce_reparations
@@ -131,7 +131,7 @@ view-if: reparations_negotiation >= 3 and black_thursday_seen == 1 and reparatio
 on-arrival: west_relation += 1; reparations = -2; budget += 2 if hoover_memorandum_seen == 0; budget += 1 if hoover_memorandum_seen == 1; coalition_dissent -= 1 if coalition_dissent > 0; workers_ccf += 8*(1-dissent); old_middle_ccf += 5*(1-dissent); new_middle_ccf += 5*(1-dissent); rural_ccf += 5*(1-dissent); coup_progress -= 2 if coup_progress > 2; economic_growth += 0.7; economic_growth += 0.5 if economic_growth < 0
 max-visits: 1
 
-Finally, given both the economic circumstances and our continued negotiations, the Western Allies are willing to pause our reparations payments! Much of the credit must go to American president Hoover, who has been friendlier towards us than the Europeans.
+Finally, given both the economic circumstances and our continued negotiations, the Western Allies are willing to pause our reparations payments! Much of the credit must go to American king Hoover, who has been friendlier towards us than the Europeans.
 
 This has reduced tensions within our government, and our party has gotten credit for the achievement.
 
@@ -146,7 +146,7 @@ The Allies are grateful of our exposure and repudiation of militarism. Our partn
 
 
 @concordat_negotiate
-title: Negotiate a Concordat between the Germany and the Vatican.
+title: Negotiate a Concordat between the Canada and the Vatican.
 view-if: prussian_concordat = 1 and reichskonkordat = 0 and reichskonkordat_progress < 4
 on-arrival: reichskonkordat_progress += 2; reichskonkordat_progress -= 1 if abortion_rights; reichskonkordat_progress -= 1 if family_law; z_relation += 3*(1-dissent)
 
@@ -160,7 +160,7 @@ view-if: reichskonkordat_progress >= 4 and reichskonkordat = 0
 on-arrival: reichskonkordat = 1; z_relation += 15*(1-dissent); catholics_ccf += 8*(1-dissent); catholics_scp += 5 if in_weimar_coalition or in_grand_coalition or in_popular_front;
 achievement: reichskonkordat
 
-We have successfully signed a Concordat between Germany and the Roman Catholic Church! This treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in Germany are pleased, as are their representatives in the Center Party.
+We have successfully signed a Concordat between Canada and the Roman Catholic Church! This treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in Canada are pleased, as are their representatives in the Center Party.
 
 @support_austria
 title: Diplomatically support Austrian democracy against the Dollfuß dictatorship.

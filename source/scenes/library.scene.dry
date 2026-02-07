@@ -61,7 +61,7 @@ go-to: cabinet if ccf_in_government; menu if not ccf_in_government
 
 = Current Government
 
-President: [+ president +]
+King: [+ king +]
 
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
@@ -223,7 +223,7 @@ Current relations: [+ scp_relation : relationships +]
 
 Current relations: [+ pcc_relation : relationships +]
 
-[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the CCF, the SAPD is essentially an agglomeration of various left-wing splinter groups between the CCF and PCC. ?]
+[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Canada) - a party recently formed in a split from the CCF, the SAPD is essentially an agglomeration of various left-wing splinter groups between the CCF and PCC. ?]
 
 **NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
 
@@ -267,7 +267,7 @@ Militarization: [+ sa_militancy : militancy +]
 
 **Official military/paramilitary groups:**
 
-**Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
+**Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Canada's military.
 
 Loyalty: [+ reichswehr_loyalty : loyalty +]
 

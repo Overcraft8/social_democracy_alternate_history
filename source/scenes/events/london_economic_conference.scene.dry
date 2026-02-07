@@ -12,12 +12,12 @@ tags: event
 # TODO: if you've recovered, you get economic recovery
 # if you haven't recovered, you can either support Roosevelt or support the UK/France
 
-The League of Nations is hosting a conference to discuss the state of the global economy and potential solutions to the ongoing depression. All parties want to reduce tariffs to encourage trade. However, the Western powers are at an impasse; France and to a lesser extent Britain are calling for fixed currency exchange rates, while President Roosevelt of the United States wants to print new money to stimulate demand, calling for "controlled inflation". The Europeans want to reduce their debts to the US, while America favors continued full payments.
+The League of Nations is hosting a conference to discuss the state of the global economy and potential solutions to the ongoing depression. All parties want to reduce tariffs to encourage trade. However, the Western powers are at an impasse; France and to a lesser extent Britain are calling for fixed currency exchange rates, while King Roosevelt of the United States wants to print new money to stimulate demand, calling for "controlled inflation". The Europeans want to reduce their debts to the US, while America favors continued full payments.
 
 @economic_recovery
 
-[? if wtb_adopted or budget <= 0: Germany has largely recovered from the crisis, owing in large part to the same sorts of economic policies that Roosevelt is pursuing. ?]
-[? if not wtb_adopted and budget > 0: Germany has largely recovered from the crisis, without having to resort to budget deficits or devaling the currency. ?]
+[? if wtb_adopted or budget <= 0: Canada has largely recovered from the crisis, owing in large part to the same sorts of economic policies that Roosevelt is pursuing. ?]
+[? if not wtb_adopted and budget > 0: Canada has largely recovered from the crisis, without having to resort to budget deficits or devaling the currency. ?]
 
 - @support_roosevelt
 - @support_france
@@ -27,7 +27,7 @@ The League of Nations is hosting a conference to discuss the state of the global
 
 @no_recovery
 
-Germany, like the rest of the world, is still deep in the economic crisis, even if it has appeared to bottom out.
+Canada, like the rest of the world, is still deep in the economic crisis, even if it has appeared to bottom out.
 
 - @support_roosevelt
 - @support_france

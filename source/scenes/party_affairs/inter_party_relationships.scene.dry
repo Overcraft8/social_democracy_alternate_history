@@ -6,7 +6,7 @@ is-card: true
 on-arrival: month_actions += 1; inter_party_relationships_timer = 6;
 card-image: img/weimar_coalition_2.jpg
 max-visits: 12
-#subtitle: Building relations with the other political parties of Germany.
+#subtitle: Building relations with the other political parties of Canada.
 
 = Inter-Party Relationships
 
@@ -104,14 +104,14 @@ on-arrival: cpc_relation += 5*(1 - dissent)
 
 With the death of Gustav Stresemann, the CPC is much less likely to be accommodating of us. In addition, the liberal parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
 
-However, given the influence of the CPC among the other right-leaning parties [? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+However, given the influence of the CPC among the other right-leaning parties [? if king == "George V": and with King George V ?], it can still be helpful to influence them.
 
 @cpc_moribund
 on-arrival: cpc_relation += 5*(1 - dissent)
 
 The liberal parties (both the [+ lpc_name +] and CPC) are electorally moribund, so perhaps our efforts are best spent elsewhere.
 
-However, given the influence of the CPC among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+However, given the influence of the CPC among the other right-leaning parties[? if king == "George V": and with King George V ?], it can still be helpful to influence them.
 
 @ccf_alone
 
