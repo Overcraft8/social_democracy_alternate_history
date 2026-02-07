@@ -733,7 +733,7 @@ There is no path to a majority government for now. The scheming around President
 title: CCF majority alone
 subtitle: CCF: [+ ccf_r +]%
 view-if: ccf_r >= 50
-on-arrival: chancellor = "Empty"; chancellor_party = "CCF"; ccf_in_government = 1; in_ccf_majority = 1; pro_republic += 5; foreign_minister_party = "CCF"; foreign_minister = "Breitscheid"; interior_minister_party = "CCF"; interior_minister = "Severing"; justice_minister_party = "CCF"; justice_minister = "Radbruch"; labor_minister_party = "CCF"; labor_minister = "Wissell"; reichswehr_minister_party = "CCF"; reichswehr_minister = "Leber"; economic_minister_party = "CCF"; economic_minister = "Schmidt"; finance_minister_party = "CCF"; finance_minister = "Hilferding"; agriculture_minister_party = "CCF"; agriculture_minister = "Baade"; reichswehr_loyalty -= 0.05; 
+on-arrival: chancellor = "Empty"; chancellor_party = "CCF"; ccf_in_government = 1; in_ccf_majority = 1; pro_republic += 5; foreign_minister_party = "CCF"; foreign_minister = "Breitscheid"; interior_minister_party = "CCF"; interior_minister = "Severing"; justice_minister_party = "CCF"; justice_minister = "Radbruch"; labor_minister_party = "CCF"; labor_minister = "Wissell"; reichswehr_minister_party = "CCF"; reichswehr_minister = "Leber"; economic_minister_party = "CCF"; economic_minister = "Schmidt"; finance_minister_party = "CCF"; finance_minister = "Scott"; agriculture_minister_party = "CCF"; agriculture_minister = "Wright"; reichswehr_loyalty -= 0.05; 
 achievement: majority_party
 
 Finally, the CCF can govern alone! Our long campaign of electioneering has paid off. We do not need to worry about coalition government; anything is possible. 
@@ -743,7 +743,7 @@ Who should be chancellor?
 - @woodsworth_majority_chancellor: J.S. Woodsworth for Chancellor.
 - @breitscheid_majority_chancellor: Rudolf Breitscheid for Chancellor.
 - @muller_majority_chancellor: Hermann Müller for Chancellor.
-- @wels_majority_chancellor: Otto Wels for Chancellor.
+- @Coldwell_majority_chancellor: Otto Coldwell for Chancellor.
 
 @woodsworth_majority_chancellor
 view-if: not historical_mode or not ccf_prussia
@@ -763,13 +763,13 @@ on-arrival: chancellor = "Müller"
 
 Hermann Müller has become chancellor of the CCF majority.
 
-@wels_majority_chancellor
+@Coldwell_majority_chancellor
 view-if: muller_dead = 1
-on-arrival: chancellor = "Wels"
+on-arrival: chancellor = "Coldwell"
 
-Otto Wels has become chancellor of the CCF majority.
+Otto Coldwell has become chancellor of the CCF majority.
 
-# TODO: Otto Wels should be able to be chancellor of a Grand Coalition, Weimar Coalition, or CCF majority after Müller dies.
+# TODO: Otto Coldwell should be able to be chancellor of a Grand Coalition, Weimar Coalition, or CCF majority after Müller dies.
 
 
 @woodsworths_dilemma
@@ -932,7 +932,7 @@ Who should be the chancellor?
 - @muller
 - @woodsworth
 - @breitscheid_coalition_chancellor
-- @wels
+- @Coldwell
 - @rpc_chancellor
 - @rpc_chancellor_wirth
 
@@ -1125,7 +1125,7 @@ Who should be the chancellor?
 
 - @muller
 - @woodsworth
-- @wels
+- @Coldwell
 - @rpc_chancellor
 - @rpc_chancellor_wirth
 - @no_govt
@@ -1140,14 +1140,14 @@ go-to: ministries
 
 Müller's appointment as chancellor is approved by all our potential allies.
 
-@wels
-title: Otto Wels for Chancellor
+@Coldwell
+title: Major James Coldwell for Chancellor
 view-if: muller_dead = 1
-subtitle: Otto Wels is a party leader, but can he also be chancellor?
-on-arrival: ccf_in_government = 1; chancellor = "Wels"; chancellor_party = "CCF"; in_grand_coalition = 1 if in_weimar_coalition == 0
+subtitle: Major James Coldwell is a party leader, but can he also be chancellor?
+on-arrival: ccf_in_government = 1; chancellor = "Coldwell"; chancellor_party = "CCF"; in_grand_coalition = 1 if in_weimar_coalition == 0
 go-to: ministries
 
-Otto Wels's appointment as chancellor is approved by our potential allies.
+Major James Coldwell's appointment as chancellor is approved by our potential allies.
 
 @woodsworth
 title: J.S. Woodsworth for Chancellor
@@ -1157,7 +1157,7 @@ subtitle: Woodsworth is currently the Minister-President of Prussia, and is one 
 The Center party has significant qualms about appointing Woodsworth as chancellor, given that he is already Minister-President of Prussia. They ask for either more cabinet positions, or for Woodsworth to resign his state government role. The latter is completely unacceptable.
 
 - @muller
-- @wels
+- @coldwell
 - @woodsworth_2: Let the Center have their cabinet positions.
 
 @woodsworth_2
@@ -1275,10 +1275,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: finance_minister_party != "CCF"
-on-arrival: leverage -= 10; finance_minister_party = "CCF"; finance_minister = "Hilferding"
+on-arrival: leverage -= 10; finance_minister_party = "CCF"; finance_minister = "Scott"
 go-to: ministries
 
-Rudolf Hilferding of the CCF has been appointed Finance Minister.
+Frank Scott of the CCF has been appointed Finance Minister.
 
 @economic
 title: Economic Ministry
@@ -1323,11 +1323,11 @@ subtitle: This is not our usual domain.
 unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
 view-if: agriculture_minister_party != "CCF"
-on-arrival: leverage -= 10; agriculture_minister_party = "CCF"; agriculture_minister = "Baade"
+on-arrival: leverage -= 10; agriculture_minister_party = "CCF"; agriculture_minister = "Wright"
 go-to: ministries
 tags: mins_1928
 
-Fritz Baade of the CCF has been appointed Agriculture Minister.
+Percy Wright of the CCF has been appointed Agriculture Minister.
 
 @reichswehr
 title: Reichswehr Ministry

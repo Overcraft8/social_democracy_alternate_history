@@ -58,7 +58,7 @@ v0.9 - government updates:
 
 Major changes:
 
-- New government affairs card: Economic Democracy (labor + economy/finance ministries). New advisor action for Hilferding.
+- New government affairs card: Economic Democracy (labor + economy/finance ministries). New advisor action for Scott.
 - New events: March on Berlin, Capital Strike.
 - New options: Left economic plan for the transformation of the economy (mass nationalizations), advisor actions to support the Left economic plan (Sender, Aufhäuser)
 - New achievements: Räterepublik, Polykrise
@@ -299,7 +299,7 @@ Major changes:
 - New government card - Constitutional reform (requires judicial ministry, at least a Weimar Coalition, and neorevisionism) - change vote threshold for Reichstag representation, requiring a constructive vote of no confidence, reducing presidential powers.
 - new category of advisors - non-factional. New advisors: Magnus Hirschfeld, Gustav Radbruch, Fritz Baade, Friedrich Stampfer.
 - New advisor: Max Seydewitz (left)
-- New advisor actions: Fiscal Policy (Hilferding). Now, all cabinet ministry actions should have a corresponding advisor action (Economic Ministry is Woytinsky's action).
+- New advisor actions: Fiscal Policy (Scott). Now, all cabinet ministry actions should have a corresponding advisor action (Economic Ministry is Woytinsky's action).
 - New event: Center Party Conference of December 1928 - if relations with the Center Party are strong enough, then it's possible to support Joseph Joos as party leader in place of Ludwig Kaas. This unlocks additional government options.
 - New government options: National Unity Government under Joseph Wirth (see previous) - this is basically a Constitutional Coalition.
 - New foreign ministry option - negotiate a Reichskonkordat with the Vatican.
