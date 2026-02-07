@@ -2,10 +2,10 @@ title: The Hunger Chancellor
 subtitle: Popular discontent with Chancellor [+ chancellor +] rises.
 new-page: true
 view-if: year >= 1931 and month >= 2 and unemployed >= 18 and welfare < 0 and works_program == 0
-on-arrival: workers_ccf *= 0.9 if chancellor_party == "CCF"; workers_ccf *= 0.9 if ccf_in_government == 1; workers_nsdap += 5 if ccf_in_government; workers_kpd += 5 if ccf_in_government; unemployed_nsdap += 5 if ccf_in_government
+on-arrival: workers_ccf *= 0.9 if chancellor_party == "CCF"; workers_ccf *= 0.9 if ccf_in_government == 1; workers_nsdap += 5 if ccf_in_government; workers_pcc += 5 if ccf_in_government; unemployed_nsdap += 5 if ccf_in_government
 tags: event
 max-visits: 1
-face-image: img/Kollwitz_Hospital.jpg
+face-image: img/Kollwitscp_Hospital.jpg
 
 = The Hunger Chancellor
 
@@ -19,7 +19,7 @@ People are calling Chancellor [+ chancellor +] the Hunger Chancellor because of 
 @maintain_toleration
 subtitle: It is necessary to preserve democracy.
 view-if: ccf_toleration == 1
-on-arrival: workers_nsdap += 5; workers_kpd += 5; unemployed_nsdap += 5; workers_ccf -= 5; pro_republic -= 5; kpd_relation -= 5
+on-arrival: workers_nsdap += 5; workers_pcc += 5; unemployed_nsdap += 5; workers_ccf -= 5; pro_republic -= 5; pcc_relation -= 5
 
 Our policy of toleration continues.
 
