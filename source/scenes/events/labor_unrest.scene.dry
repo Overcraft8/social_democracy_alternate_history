@@ -3,7 +3,7 @@ subtitle: Clashes between workers and employers in the Ruhr...
 view-if: year = 1928 and month = 12 and ccf_in_government and labor_minister_party != "CCF"
 max-visits: 1
 new-page: true
-face-image: img/Kollwitscp_Weavers.jpg
+face-image: img/Kollwitz_Weavers.jpg
 tags: event
 
 = Labor Unrest
@@ -22,7 +22,7 @@ Supporting labor is always popular in the CCF, although many of our coalition pa
 
 @support_employers
 subtitle: This will alienate the workers.
-on-arrival: labor_dissent += 8; left_dissent += 8; workers_ccf -= 6; coalition_dissent -= 1; cpc_relation += 5; scp_relation += 5; coalition_dissent -= 1; workers_pcc += 5; pcc_coalition_dissent += 1; pcc_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8
+on-arrival: labor_dissent += 8; left_dissent += 8; workers_ccf -= 6; coalition_dissent -= 1; cpc_relation += 5; z_relation += 5; coalition_dissent -= 1; workers_pcc += 5; pcc_coalition_dissent += 1; pcc_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8
 
 Even though most workers grudgingly accept the our intervention, there is deep bitterness developing against the CCF, especially among the more radical workers. The Communists stand to gain.
 

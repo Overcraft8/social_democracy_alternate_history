@@ -258,7 +258,7 @@ if (Q.month_actions >= 1) {
 
     ///////////////////////////// change party support based on pro_republic
     // if pro_republic is less than the support of the Weimar coalition, reduce CCF support...
-    if (Q.pro_republic < (Q.ccf_votes + Q.lpc_votes + Q.scp_votes - 3)) {
+    if (Q.pro_republic < (Q.ccf_votes + Q.lpc_votes + Q.z_votes - 3)) {
         if (Q.new_middle_ccf > 0) {
             Q.new_middle_ccf -= 5/12;
             Q.new_middle_nsdap += 3/12;

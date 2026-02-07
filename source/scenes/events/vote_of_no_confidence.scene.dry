@@ -51,10 +51,10 @@ on-arrival: resources -= 3; coalition_dissent -= 1;
 By transferring resources to our coalition partners, we can reduce their dissent against our policies. This is a crude, but effective solution.
 
 @support_pcc
-choose-if: (in_grand_coalition and communist_coalition >= 3 and pcc_relation >= 50 and pcc_r >= cpc_r) or (in_weimar_coalition and pcc_relation >= 50 and pcc_r >= scp_r and communist_coalition >= 3)
+choose-if: (in_grand_coalition and communist_coalition >= 3 and pcc_relation >= 50 and pcc_r >= cpc_r) or (in_weimar_coalition and pcc_relation >= 50 and pcc_r >= z_r and communist_coalition >= 3)
 view-if: tried_supporting_pcc = 0
 on-arrival: tried_supporting_pcc = 1
-unavailable-subtitle: [? if communist_coalition < 3 : The PCC won't take part in parliamentary government. ?] [? if pcc_relation < 50 : The PCC is not friendly enough with us. ?] [? if (in_grand_coalition and pcc_r < cpc_r) or (in_weimar_coalition and pcc_r < scp_r): The PCC does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the PCC. ?]
+unavailable-subtitle: [? if communist_coalition < 3 : The PCC won't take part in parliamentary government. ?] [? if pcc_relation < 50 : The PCC is not friendly enough with us. ?] [? if (in_grand_coalition and pcc_r < cpc_r) or (in_weimar_coalition and pcc_r < z_r): The PCC does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the PCC. ?]
 
 If the Communists abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the PCC. This could lead to broader cooperation in the future, for better or for worse.
 

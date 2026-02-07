@@ -2,7 +2,7 @@ title: Marie Juchacz
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/JuchaczMarie.jpg
-view-if: juchacscp_advisor = 1
+view-if: juchacz_advisor = 1
 new-page: true 
 
 = Marie Juchacz

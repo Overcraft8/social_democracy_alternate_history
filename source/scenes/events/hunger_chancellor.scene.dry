@@ -5,7 +5,7 @@ view-if: year >= 1931 and month >= 2 and unemployed >= 18 and welfare < 0 and wo
 on-arrival: workers_ccf *= 0.9 if chancellor_party == "CCF"; workers_ccf *= 0.9 if ccf_in_government == 1; workers_nsdap += 5 if ccf_in_government; workers_pcc += 5 if ccf_in_government; unemployed_nsdap += 5 if ccf_in_government
 tags: event
 max-visits: 1
-face-image: img/Kollwitscp_Hospital.jpg
+face-image: img/Kollwitz_Hospital.jpg
 
 = The Hunger Chancellor
 

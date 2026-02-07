@@ -20,7 +20,7 @@ title: Negotiating with the Coalition
 subtitle: Müller can improve our relationships with our coalition partners.
 choose-if: advisor_action_timer <= 0 and ccf_in_government = 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not ccf_in_government: The CCF is not in government. ?]
-on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if ccf_in_government = 1 and coalition_dissent > 0; scp_relation += 5; lpc_relation += 5; cpc_relation += 5
+on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if ccf_in_government = 1 and coalition_dissent > 0; z_relation += 5; lpc_relation += 5; cpc_relation += 5
 
 We have improved our relations with the Z, [+ lpc_name +], and CPC, and reduced tensions with the coalition.
 
